@@ -1,0 +1,85 @@
+.footer {
+    background-color: #457758;
+    position: relative;
+    z-index: 1;
+    margin-top: 65px;
+    // &__container {}
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        &_navs {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 100px;
+        }
+        & .nav {
+            margin-right: 20px;
+            flex-direction: column;
+            &-header {
+                font-family: 'Montserrat';
+                font-size: 12px;
+                line-height: 15px;
+                color: #fff;
+                font-weight: bold;
+                margin-bottom: 7px;
+                &:last-of-type {
+                    margin-top: 18px;
+                }
+            }
+            &-link {
+                font-family: 'Montserrat';
+                font-size: 10px;
+                line-height: 13px;
+                color: #fff;
+                padding: 3px 0;
+            }
+        }
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 32px;
+        &_middle {
+            // flex: 0 1 20%;
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            margin-right: 120px;
+        }
+        & .copyright {
+            font-family: "Montserrat";
+            font-size: 12px;
+            line-height: 14px;
+            color: #fff;
+            flex: 0 1 30%;
+        }
+        & .contacts {
+            display: flex;
+            justify-content: space-between;
+            font-size: 8px;
+            line-height: 10px;
+            
+            &__link {
+                color: #fff;
+                text-decoration: none;
+                padding: 3px 3px 3px 15px;
+                background-repeat: no-repeat;
+                background-position: 0 50%;
+                &.email {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.758' height='11.757' viewBox='0 0 11.758 11.757'%3E%3Cpath id='Контур_1681' data-name='Контур 1681' d='M8062.3,3071a10.293,10.293,0,0,0,.823-3.919h2.216A4.794,4.794,0,0,1,8062.3,3071Zm-6.467-3.919h2.216a10.311,10.311,0,0,0,.823,3.919A4.8,4.8,0,0,1,8055.835,3067.086Zm3.039-5.014a10.313,10.313,0,0,0-.823,3.919h-2.216A4.8,4.8,0,0,1,8058.874,3062.072Zm.271,3.919c.1-2.746.979-4.237,1.442-4.237s1.339,1.49,1.442,4.237Zm1.442,5.332c-.463,0-1.338-1.49-1.442-4.237h2.885C8061.927,3069.832,8061.051,3071.323,8060.588,3071.323Zm4.753-5.332h-2.216a10.3,10.3,0,0,0-.823-3.919A4.8,4.8,0,0,1,8065.341,3065.991Zm1.1,0a5.879,5.879,0,0,0-11.707,0h-.025v1.095h.025a5.879,5.879,0,0,0,11.707,0h.025v-1.095Z' transform='translate(-8054.709 -3060.66)' fill='%23fff'/%3E%3C/svg%3E%0A");
+                  
+                }
+                &.phone {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.84' height='10.842' viewBox='0 0 10.84 10.842'%3E%3Cpath id='Контур_1682' data-name='Контур 1682' d='M2932.454,168.706l-.493,2.134a.657.657,0,0,1-.644.513,9.7,9.7,0,0,1-9.687-9.688.658.658,0,0,1,.513-.644l2.134-.493a.664.664,0,0,1,.757.384l.986,2.3a.662.662,0,0,1-.19.771l-1.14.915a7.4,7.4,0,0,0,3.377,3.377l.934-1.138a.66.66,0,0,1,.772-.191l2.3.986A.722.722,0,0,1,2932.454,168.706Z' transform='translate(-2921.63 -160.511)' fill='%23fff'/%3E%3C/svg%3E%0A");
+                }
+            }
+        }
+        & .developer {
+            display: block;
+        }
+    }
+}

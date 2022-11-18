@@ -1,0 +1,205 @@
+.header {
+    position: relative;
+    z-index: 2;
+    background-color: #457758;
+    & .btn {
+        border: none;
+    }
+    &__army-logo {
+        display: block;
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__container {
+        display: flex;
+        position: relative;
+        &::after{
+            content: '';
+            display: block;
+            width: 306px;
+           
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 100%; 
+            background-image: url('../images/header_el.svg');
+            background-size: cover;
+        }
+    }
+
+    &__left {
+        background-color: #345A43;
+        padding: 6px 6px 6px 0;
+    }
+
+    &__middle {
+
+        & .nav-item:last-child .nav-link::after {
+            content: none;
+        }
+        & .nav {
+            margin-left: 95px;
+          
+        }
+        & .nav-link {
+            font-family: 'Montserrat';
+            font-size: 14px;
+            line-height: 18px;
+            color: #fff;
+            padding: 4px 14px;
+            position: relative;
+            border-bottom: 3px solid transparent;
+
+            &:hover {
+                border-color: #F5A80F;
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                width: 1px;
+                height: calc(100% - 8px);
+                background-color: #fff;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+            }
+        }
+
+        & .dropdown-menu {
+            border-radius: 0;
+            background-color: #C5D5CC;
+            padding-top: 15px;
+            padding-bottom: 0;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid #6A947B;
+                position: absolute;
+                top: 0;
+                left: 10px;
+            }
+        }
+
+        & .dropdown-item {
+            font-size: 12px;
+            line-height: 15px;
+
+        }
+    }
+
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 30px;
+        flex-grow: 1;
+        justify-content: flex-start;
+        & .nav {
+            margin-right: 18px;
+            &__lang {
+                & .btn {
+                    border: none;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #fff;
+                    &:hover,
+                    &:focus {
+                        border: none;
+                    }
+                }
+                & .dropdown-menu {
+                    padding: 0;
+                    border-radius: 0;
+                }
+                & .dropdown-item {
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+            }
+           
+        }
+
+        & .btn {
+            padding-top: 0;
+        }
+
+        & .nav-item {
+            margin-bottom: 4px;
+        }
+
+        & .nav-link {
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            line-height: 16px;
+            color: #fff;
+            text-align: right;
+            padding: 0;
+            border-bottom: 1px solid transparent;
+            &:hover{
+                border-color: #F5A80F;
+            }
+        }
+        & .btn__search {
+            margin-left: auto;
+            
+        }
+    }
+    & .menu__btn {
+        display: none;
+    }
+
+    & .org__list {
+        list-style: none;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #345A43;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+}
+
+.sandwich {
+    cursor: pointer;
+    height: 20px;
+    position: relative;
+    width: 32px;
+    &.is {
+        &-active {
+            .sandwich__line {
+                &--top {
+                    top: 10px;
+                    transform: rotate(45deg);
+                }
+                &--middle { opacity: 0; }
+                &--bottom {
+                    top: 10px;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+    &__line {
+        background-color: #fff;
+        display: block;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        transition: all linear .4s;
+        width: 100%;
+        &--top { top: 0; }
+        &--middle { top: 9px; }
+        &--bottom { top: 18px; }
+    }
+}

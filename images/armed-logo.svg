@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="206" height="113.883" viewBox="0 0 206 113.883">
+  <defs>
+    <filter id="Контур_4" x="0" y="65.788" width="76.202" height="48.096" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Контур_5" x="0" y="39.549" width="99.394" height="54.246" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Контур_6" x="0" y="17.988" width="99.394" height="54.245" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Контур_7" x="0" y="17.711" width="90.591" height="51.895" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Контур_8" x="1.5" y="0" width="87.591" height="48.895" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Контур_9" x="0" y="50.376" width="76.202" height="48.095" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-6"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Сгруппировать_363" data-name="Сгруппировать 363" transform="translate(-366 -15.5)">
+    <text id="O_zbekiston_Respublikasi_Qurolli_Kuchlari" data-name="O&apos;zbekiston 
+Respublikasi
+Qurolli Kuchlari" transform="translate(464 55)" fill="#fff" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">O&apos;zbekiston </tspan><tspan x="0" y="21">Respublikasi</tspan><tspan x="0" y="42">Qurolli Kuchlari</tspan></text>
+    <g id="Слой_x0020_1" transform="translate(-885.22 -3227)">
+      <g transform="matrix(1, 0, 0, 1, 1251.22, 3242.5)" filter="url(#Контур_4)">
+        <path id="Контур_4-2" data-name="Контур 4" d="M1260.22,5772.405l58.2-15.368V5742.31l-58.2,15.368Z" transform="translate(-1251.22 -5670.52)" fill="#20b43a" fill-rule="evenodd"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 1251.22, 3242.5)" filter="url(#Контур_5)">
+        <path id="Контур_5-2" data-name="Контур 5" d="M1260.22,4805.5l81.394-21.518v-14.728l-81.394,21.518Z" transform="translate(-1251.22 -4723.71)" fill="#fff" fill-rule="evenodd"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 1251.22, 3242.5)" filter="url(#Контур_6)">
+        <path id="Контур_6-2" data-name="Контур 6" d="M1260.22,3969.68l81.394,21.518v14.728l-81.394-21.517Z" transform="translate(-1251.22 -3945.69)" fill="#fff" fill-rule="evenodd"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 1251.22, 3242.5)" filter="url(#Контур_7)">
+        <path id="Контур_7-2" data-name="Контур 7" d="M1260.22,3993.325l72.591-19.167V3959.43L1260.22,3978.6Z" transform="translate(-1251.22 -3935.72)" fill="#0099b8" fill-rule="evenodd"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 1251.22, 3242.5)" filter="url(#Контур_8)">
+        <path id="Контур_8-2" data-name="Контур 8" d="M1260.22,3247l72.591,19.167V3280.9l-72.591-19.168Z" transform="translate(-1251.22 -3242.5)" fill="#0099b8" fill-rule="evenodd"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 1251.22, 3242.5)" filter="url(#Контур_9)">
+        <path id="Контур_9-2" data-name="Контур 9" d="M1260.22,5170.79l58.2,15.368v14.728l-58.2-15.368Z" transform="translate(-1251.22 -5114.41)" fill="#20b43a" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

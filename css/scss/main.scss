@@ -1,0 +1,86 @@
+/* USER VARIABLES SECTION */
+
+:root {
+	--accent: orange;
+	--text: #333;
+	--regular-text: 16px;
+	--lineheight: 1.65;
+	--userfont: roboto-st, sans-serif;
+	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+/* FONTS LOAD SECTION */
+
+@font-face { src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"); font-family: "Roboto"; font-weight: 400; font-style: normal; }
+@font-face { src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"); font-family: "Roboto"; font-weight: 400; font-style: italic; }
+@font-face { src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"); font-family: "Roboto"; font-weight: 700; font-style: normal; }
+@font-face { src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"); font-family: "Roboto"; font-weight: 700; font-style: italic; }
+
+@font-face { src: url("../fonts/Montserrat-Regular.woff") format("woff"); font-family: "Montserrat"; font-weight: 400; font-style: normal; }
+@font-face { src: url("../fonts/Montserrat-Medium.woff") format("woff"); font-family: "Montserrat"; font-weight: 500; font-style: normal; }
+@font-face { src: url("../fonts/Montserrat-SemiBold.woff") format("woff"); font-family: "Montserrat"; font-weight: 600; font-style: normal; }
+@font-face { src: url("../fonts/Montserrat-Bold.woff") format("woff"); font-family: "Montserrat"; font-weight: 700; font-style: normal; }
+@font-face { src: url("../fonts/Montserrat-ExtraBold.woff") format("woff"); font-family: "Montserrat"; font-weight: 900; font-style: normal; }
+
+/* GENERAL CSS SETTINGS */
+
+
+body {
+	font-family: var(--userfont);
+	font-size: var(--regular-text);
+	line-height: var(--lineheight);
+	color: var(--text);
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.social {
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	margin-bottom: 0;
+	&__item {
+		margin-right: 30px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+}
+#app {
+	overflow-x: hidden
+}
+.page {
+	&-item {
+		margin-right: 5px;
+		&:first-child .page-link{
+			border-radius: 50%;
+		}
+		&:last-child .page-link {
+			border-radius: 50%;
+		}
+	}
+	&-link {
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #457758;
+		&:hover {
+			background-color: rgba($color: #457758, $alpha: .70);
+			color: #fff
+		}
+	}
+}
+
+@import './_header';
+@import './_footer';
+
+@import './_banner';
+@import './_news-wdiget';
+@import './_video';
+@import './_content';
+@import './_search';

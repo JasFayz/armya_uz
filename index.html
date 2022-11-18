@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Simple Starter</title>
+	<meta name="description" content="Simple Starter Description">
+
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/preview.jpg">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/splide/dist/css/splide.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+</head>
+<div id="app">
+	<header class="header">
+		<div class="container-lg">
+			<div class="header__container">
+				<div class="header__left">
+					<a href="" class="header__armed-logo">
+						<img src="/images/armed-logo.svg" alt="">
+					</a>
+				</div>
+				<div class="header__middle">
+					<a href="" class="header__army-logo">
+						<img src="/images/army-logo.svg" alt="">
+					</a>
+					<ul class="nav" id="header_nav">
+						<li class="nav-item">
+							<a href="" class="nav-link">
+								<svg id="Слой_x0020_1" xmlns="http://www.w3.org/2000/svg" width="17.14" height="15.215"
+									viewBox="0 0 17.14 15.215">
+									<path id="Контур_1684" data-name="Контур 1684"
+										d="M689.8,2713.926l.021,4.757a2.371,2.371,0,0,1-.014.241v.482a1.19,1.19,0,0,1-1.191,1.188h-.475c-.033,0-.067-.027-.1,0-.041-.024-.084,0-.125,0h-1.681a1.19,1.19,0,0,1-1.191-1.188v-2.615a.951.951,0,0,0-.952-.952h-1.9a.951.951,0,0,0-.953.952v2.615a1.188,1.188,0,0,1-1.19,1.188h-1.663c-.046,0-.091,0-.135-.006s-.072.006-.106.006h-.477a1.188,1.188,0,0,1-1.19-1.188v-3.329c0-.027,0-.055,0-.082v-2.069h-.953a.941.941,0,0,1-.953-.953.965.965,0,0,1,.3-.714l7.631-6.642a.861.861,0,0,1,.654-.238,1,1,0,0,1,.627.208q3.8,3.338,7.6,6.672a.8.8,0,0,1,.327.714.961.961,0,0,1-.953.953H689.8Z"
+										transform="translate(-674.57 -2705.38)" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="" class="nav-link" data-bs-toggle="dropdown" role="button">Новости</a>
+							<div class="dropdown-menu">
+								<a href="" class="dropdown-item">По Узбекистану</a>
+								<a href="" class="dropdown-item">По региональну</a>
+								<a href="" class="dropdown-item">В Мире</a>
+								<a href="" class="dropdown-item">Видео</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Патриотизм</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Военная Аналитика</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Военная история</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header__right">
+					<div class="nav nav__info flex-column">
+						<li class="nav-item">
+							<div class="nav-link">Вторник, 8 ноября 2022</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Отзывы</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Контакты</a>
+						</li>
+					</div>
+					<div class="dropdown nav__lang">
+						<button class="btn dropdown-toggle" data-bs-toggle="dropdown">
+							Рус
+						</button>
+						<div class="dropdown-menu">
+							<a href="" class="dropdown-item">Uzb</a>
+							<a href="" class="dropdown-item">Eng</a>
+						</div>
+					</div>
+
+					<!-- <div class="special_part ">
+						<a href="#" class="btn icon_accessibility dataTooltip " data-toggle="dropdown"
+							data-placement="bottom" title="Махсус имкониятлар" aria-expanded="false">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 21.964 14.642">
+								<path id="Icon_awesome-eye" data-name="Icon awesome-eye"
+									d="M21.831,11.264A12.23,12.23,0,0,0,10.982,4.5,12.232,12.232,0,0,0,.133,11.265a1.234,1.234,0,0,0,0,1.113,12.23,12.23,0,0,0,10.849,6.764,12.232,12.232,0,0,0,10.849-6.765A1.234,1.234,0,0,0,21.831,11.264ZM10.982,17.312a5.491,5.491,0,1,1,5.491-5.491A5.491,5.491,0,0,1,10.982,17.312Zm0-9.151a3.634,3.634,0,0,0-.965.145,1.825,1.825,0,0,1-2.551,2.551,3.652,3.652,0,1,0,3.516-2.7Z"
+									transform="translate(0 -4.5)" fill="#FFFFFF"></path>
+							</svg>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right specialViewArea no-propagation" style="">
+							<div class="triangle2"></div>
+
+							<div class="appearance">
+								<p class="specialTitle">Ko'rinish</p>
+
+								<div class="squareAppearances">
+									<div class="squareBox spcNormal" data-toggle="tooltip" data-placement="bottom"
+										title="" data-original-title="Oddiy ko'rinish">A
+									</div>
+								</div>
+								<div class="squareAppearances">
+									<div class="squareBox spcWhiteAndBlack" data-toggle="tooltip"
+										data-placement="bottom" title="" data-original-title="Oq-qora ko'rinish">A
+									</div>
+								</div>
+								<div class="squareAppearances">
+									<div class="squareBox spcDark" data-toggle="tooltip" data-placement="bottom"
+										title="" data-original-title="Qorong'ilashtirilgan ko'rinish">A
+									</div>
+								</div>
+							</div>
+
+							<div class="appearance">
+								<p class="specialTitle">Shrift hajmi</p>
+
+								<div class="block blocked">
+									<div class="sliderText"><span class="range">0</span>% ga kattalashtirish</div>
+									<div id="fontSizer"
+										class="defaultSlider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+										<div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"
+											style="width: 0%;"></div><span
+											class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"
+											style="left: 0%;"></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="appearance">
+								<p class="specialTitle">Ekran suxandoni</p>
+								<div class="block">
+									<div class="blueCheckbox">
+										<input type="checkbox" onclick="window.location.reload()" id="speechSwitcher"
+											title="Ekran suxandoni funksiyasi yoqildi" name="speechSwitcher">
+										<label for="speechSwitcher"><span></span>Yoqish / O'chirish</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+
+					<button class="btn btn__search" data-bs-toggle="modal" data-bs-target="#myModal">
+						<svg xmlns="http://www.w3.org/2000/svg" width="11.208" height="11.209"
+							viewBox="0 0 11.208 11.209">
+							<g id="Слой_x0020_1" transform="translate(-2600.957 -1076.307)">
+								<path id="Контур_1846" data-name="Контур 1846"
+									d="M2611.908,1086.019l-2.62-2.621a4.548,4.548,0,1,0-1.239,1.241l2.62,2.62a.876.876,0,1,0,1.239-1.24Zm-9.22-5.16a2.8,2.8,0,1,1,2.8,2.8A2.805,2.805,0,0,1,2602.688,1080.859Z"
+									fill="#fff" />
+							</g>
+						</svg>
+
+					</button>
+					<button class="btn menu__btn" type="button">
+						<div class="sandwich">
+							<div class="sandwich__line sandwich__line--top"></div>
+							<div class="sandwich__line sandwich__line--middle"></div>
+							<div class="sandwich__line sandwich__line--bottom"></div>
+						</div>
+					</button>
+				</div>
+			</div>
+		</div>
+		<ul class="org__list">
+			<li class="org__list_item">
+				<a href="" class="org__list_link">
+					<img src="/images/mo_logo.svg" alt="">
+				</a>
+			</li>
+			<li class="org__list_item">
+				<a href="" class="org__list_link">
+					<img src="/images/mg_logo.svg" alt="">
+				</a>
+			</li>
+			<li class="org__list_item">
+				<a href="" class="org__list_link">
+					<img src="/images/dxx_logo.svg" alt="">
+				</a>
+			</li>
+			<li class="org__list_item">
+				<a href="" class="org__list_link">
+					<img src="/images/fvv_logo.svg" alt="">
+				</a>
+			</li>
+			<li class="org__list_item">
+				<a href="" class="org__list_link">
+					<img src="/images/iiv.svg" alt="">
+				</a>
+			</li>
+		</ul>
+	</header>
+
+	<section class="banner">
+		<div class="container-xl bigger">
+			<div class="banner__container">
+				<div class="row">
+					<div class="col-xl-7 col-lg-12">
+						<div class="splide banner__slider" role="group" aria-label="Splide Basic HTML Example">
+							<div class="splide__track h-100">
+								<ul class="splide__list">
+									<li class="splide__slide">
+										<div class="slider__image">
+											<img src="/images/banner_slider_img.jpg" alt="" class="w-100">
+										</div>
+										<div class="slider__content">
+											<div class="title">
+												Проведен строевой смотр готовности войск
+												Министерства обороны Республики Узбекистан
+											</div>
+											<div class="date">
+												<div class="number">11</div>
+												<div class="month">ноября</div>
+											</div>
+										</div>
+									</li>
+									<li class="splide__slide">
+										<div class="slider__image">
+											<img src="/images/banner_slider_img.jpg" alt="" class="w-100">
+										</div>
+										<div class="slider__content">
+											<div class="title">
+												Проведен строевой смотр готовности войск
+												Министерства обороны Республики Узбекистан
+											</div>
+											<div class="date">
+												<div class="number">11</div>
+												<div class="month">ноября</div>
+											</div>
+										</div>
+									</li>
+									<li class="splide__slide">
+										<div class="slider__image">
+											<img src="/images/banner_slider_img.jpg" alt="" class="w-100">
+										</div>
+										<div class="slider__content">
+											<div class="title">
+												Проведен строевой смотр готовности войск
+												Министерства обороны Республики Узбекистан
+											</div>
+											<div class="date">
+												<div class="number">11</div>
+												<div class="month">ноября</div>
+											</div>
+										</div>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-5 col-lg-12">
+						<div class="banner__sidebar">
+							<div class="row">
+								<div class="col-xl-12 col-md-6">
+									<a href="#" class="banner__card">
+										<div class="banner__card_image">
+											<img src="/images/banner_card_img.jpg" alt="">
+										</div>
+										<div class="banner__card_content">
+											<div class="info">
+												<div class="date">11:30 / 22.08.2022 </div>
+												<div class="type">МО РУ</div>
+											</div>
+											<div class="title">
+												В соревновании «Танковый биатлон» военнослужащие Узбекистана показывают
+												высокие
+												результаты
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-xl-12 col-md-6">
+									<a href="#" class="banner__card">
+										<div class="banner__card_image">
+											<img src="/images/banner_card_img.jpg" alt="">
+										</div>
+										<div class="banner__card_content">
+											<div class="info">
+												<div class="date">11:30 / 22.08.2022 </div>
+												<div class="type">МО РУ</div>
+											</div>
+											<div class="title">
+												В соревновании «Танковый биатлон» военнослужащие Узбекистана показывают
+												высокие
+												результаты
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-xl-12 col-md-6">
+									<a href="#" class="banner__card">
+										<div class="banner__card_image">
+											<img src="/images/banner_card_img.jpg" alt="">
+										</div>
+										<div class="banner__card_content">
+											<div class="info">
+												<div class="date">11:30 / 22.08.2022 </div>
+												<div class="type">МО РУ</div>
+											</div>
+											<div class="title">
+												В соревновании «Танковый биатлон» военнослужащие Узбекистана показывают
+												высокие
+												результаты
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-xl-12 col-md-6">
+									<a href="#" class="banner__card">
+										<div class="banner__card_image">
+											<img src="/images/banner_card_img.jpg" alt="">
+										</div>
+										<div class="banner__card_content">
+											<div class="info">
+												<div class="date">11:30 / 22.08.2022 </div>
+												<div class="type">МО РУ</div>
+											</div>
+											<div class="title">
+												В соревновании «Танковый биатлон» военнослужащие Узбекистана показывают
+												высокие
+												результаты
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-xl-12 col-md-6">
+									<a href="#" class="banner__card">
+										<div class="banner__card_image">
+											<img src="/images/banner_card_img.jpg" alt="">
+										</div>
+										<div class="banner__card_content">
+											<div class="info">
+												<div class="date">11:30 / 22.08.2022 </div>
+												<div class="type">МО РУ</div>
+											</div>
+											<div class="title">
+												В соревновании «Танковый биатлон» военнослужащие Узбекистана показывают
+												высокие
+												результаты
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="news__widget">
+		<div class="container-lg">
+			<div class="news__widget_container">
+				<div class="row">
+					<div class="col-lg-8 col-md-12">
+						<div class="news__widget_content">
+							<div class="news__widget_header">
+								<h4 class="title">По Узбекистану</h4>
+								<a href="" class="link">Все</a>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-6">
+									<a href="#" class="widget__card">
+										<div class="widget__card_image">
+											<img src="/images/widget_card_image.jpg" alt="">
+										</div>
+										<div class="widget__card_content">
+											<div class="info">
+												<div class="date">11:30 / 22.08.2022</div>
+												<div class="type">МЧС РУ</div>
+											</div>
+											<div class="title">
+												Почитание памяти наших граждан, пожертвовавших жизнью во имя свободы
+												Родины
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-6">
+									<a href="" class="widget__card">
+										<div class="widget__card_image">
+											<img src="/images/widget_card_image.jpg" alt="">
+										</div>
+										<div class="widget__card_content">
+											<div class="info">
+												<div class="date">11:30 / 22.08.2022</div>
+												<div class="type">МЧС РУ</div>
+											</div>
+											<div class="title">
+												Почитание памяти наших граждан, пожертвовавших жизнью во имя свободы
+												Родины
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-6">
+									<a href="#" class="widget__card">
+										<div class="widget__card_image">
+											<img src="/images/widget_card_image.jpg" alt="">
+										</div>
+										<div class="widget__card_content">
+											<div class="info">
+												<div class="date">11:30 / 22.08.2022</div>
+												<div class="type">МЧС РУ</div>
+											</div>
+											<div class="title">
+												Почитание памяти наших граждан, пожертвовавших жизнью во имя свободы
+												Родины
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<div class="news__widget_sidebar">
+							<div class="news__widget_sidebar_title">
+								Читаемые статьи
+							</div>
+							<a href="" class="widget__card horizontal shadow">
+								<div class="widget__card_image">
+									<img src="/images/widget_card_image.jpg" alt="">
+								</div>
+								<div class="widget__card_content smaller">
+									<div class="info">
+										<div class="date">11:30 / 22.08.2022</div>
+										<div class="type">МЧС РУ</div>
+									</div>
+									<div class="title">
+										Почитание памяти наших граждан, пожертвовавших жизнью во имя свободы
+										Родины
+									</div>
+								</div>
+							</a>
+							<a href="" class="widget__card horizontal shadow">
+								<div class="widget__card_image">
+									<img src="/images/widget_card_image.jpg" alt="">
+								</div>
+								<div class="widget__card_content smaller">
+									<div class="info">
+										<div class="date">11:30 / 22.08.2022</div>
+										<div class="type">МЧС РУ</div>
+									</div>
+									<div class="title">
+										Почитание памяти наших граждан, пожертвовавших жизнью во имя свободы
+										Родины
+									</div>
+								</div>
+							</a>
+							<a href="" class="widget__card horizontal shadow">
+								<div class="widget__card_image">
+									<img src="/images/widget_card_image.jpg" alt="">
+								</div>
+								<div class="widget__card_content smaller">
+									<div class="info">
+										<div class="date">11:30 / 22.08.2022</div>
+										<div class="type">МЧС РУ</div>
+									</div>
+									<div class="title">
+										Почитание памяти наших граждан, пожертвовавших жизнью во имя свободы
+										Родины
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="news__widget">
+		<div class="container-lg">
+			<div class="news__widget_container">
+				<div class="row">
+					<div class="col-lg-8 col-md-12">
+						<div class="news__widget_content">
+							<div class="news__widget_header">
+								<h4 class="title">По Региону</h4>
+								<a href="" class="link">Все</a>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-6">
+									<a href="#" class="widget__card">
+										<div class="widget__card_image">
+											<img src="/images/widget_card_image_2.jpg" alt="">
+										</div>
+										<div class="widget__card_content">
+											<div class="info">
+												<div class="date">11:30 / 22.08.2022</div>
+												<div class="type">МЧС РУ</div>
+											</div>
+											<div class="title">
+												Почитание памяти наших граждан, пожертвовавших жизнью во имя свободы
+												Родины
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-6">
+									<a href="" class="widget__card">
+										<div class="widget__card_image">
+											<img src="/images/widget_card_image_2.jpg" alt="">
+										</div>
+										<div class="widget__card_content">
+											<div class="info">
+												<div class="date">11:30 / 22.08.2022</div>
+												<div class="type">МЧС РУ</div>
+											</div>
+											<div class="title">
+												Почитание памяти наших граждан, пожертвовавших жизнью во имя свободы
+												Родины
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-6">
+									<a href="#" class="widget__card">
+										<div class="widget__card_image">
+											<img src="/images/widget_card_image_2.jpg" alt="">
+										</div>
+										<div class="widget__card_content">
+											<div class="info">
+												<div class="date">11:30 / 22.08.2022</div>
+												<div class="type">МЧС РУ</div>
+											</div>
+											<div class="title">
+												Почитание памяти наших граждан, пожертвовавших жизнью во имя свободы
+												Родины
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<div class="news__widget_sidebar">
+							<div class="news__widget_sidebar_title">
+								Читаемые статьи
+							</div>
+							<a href="" class="widget__card horizontal shadow">
+								<div class="widget__card_image">
+									<img src="/images/widget_card_image_2.jpg" alt="">
+								</div>
+								<div class="widget__card_content smaller">
+									<div class="info">
+										<div class="date">11:30 / 22.08.2022</div>
+										<div class="type">МЧС РУ</div>
+									</div>
+									<div class="title">
+										Почитание памяти наших граждан, пожертвовавших жизнью во имя свободы
+										Родины
+									</div>
+								</div>
+							</a>
+							<a href="" class="widget__card horizontal shadow">
+								<div class="widget__card_image">
+									<img src="/images/widget_card_image_2.jpg" alt="">
+								</div>
+								<div class="widget__card_content smaller">
+									<div class="info">
+										<div class="date">11:30 / 22.08.2022</div>
+										<div class="type">МЧС РУ</div>
+									</div>
+									<div class="title">
+										Почитание памяти наших граждан, пожертвовавших жизнью во имя свободы
+										Родины
+									</div>
+								</div>
+							</a>
+							<a href="" class="widget__card horizontal shadow">
+								<div class="widget__card_image">
+									<img src="/images/widget_card_image_2.jpg" alt="">
+								</div>
+								<div class="widget__card_content smaller">
+									<div class="info">
+										<div class="date">11:30 / 22.08.2022</div>
+										<div class="type">МЧС РУ</div>
+									</div>
+									<div class="title">
+										Почитание памяти наших граждан, пожертвовавших жизнью во имя свободы
+										Родины
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="news__widget">
+		<div class="container-lg">
+			<div class="news__widget_container">
+				<div class="row">
+					<div class="col-lg-8 col-md-12">
+						<div class="news__widget_content">
+							<div class="news__widget_header">
+								<h4 class="title">В Мире</h4>
+								<a href="" class="link">Все</a>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-6">
+									<a href="#" class="widget__card">
+										<div class="widget__card_image">
+											<img src="/images/widget_card_image_3.jpg" alt="">
+										</div>
+										<div class="widget__card_content">
+											<div class="info">
+												<div class="date">11:30 / 22.08.2022</div>
+												<div class="type">МЧС РУ</div>
+											</div>
+											<div class="title">
+												Почитание памяти наших граждан, пожертвовавших жизнью во имя свободы
+												Родины
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-6">
+									<a href="" class="widget__card">
+										<div class="widget__card_image">
+											<img src="/images/widget_card_image_3.jpg" alt="">
+										</div>
+										<div class="widget__card_content">
+											<div class="info">
+												<div class="date">11:30 / 22.08.2022</div>
+												<div class="type">МЧС РУ</div>
+											</div>
+											<div class="title">
+												Почитание памяти наших граждан, пожертвовавших жизнью во имя свободы
+												Родины
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-6">
+									<a href="#" class="widget__card">
+										<div class="widget__card_image">
+											<img src="/images/widget_card_image_3.jpg" alt="">
+										</div>
+										<div class="widget__card_content">
+											<div class="info">
+												<div class="date">11:30 / 22.08.2022</div>
+												<div class="type">МЧС РУ</div>
+											</div>
+											<div class="title">
+												Почитание памяти наших граждан, пожертвовавших жизнью во имя свободы
+												Родины
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<div class="news__widget_sidebar">
+							<div class="news__widget_sidebar_title">
+								Читаемые статьи
+							</div>
+							<a href="" class="widget__card horizontal shadow">
+								<div class="widget__card_image">
+									<img src="/images/widget_card_image_3.jpg" alt="">
+								</div>
+								<div class="widget__card_content smaller">
+									<div class="info">
+										<div class="date">11:30 / 22.08.2022</div>
+										<div class="type">МЧС РУ</div>
+									</div>
+									<div class="title">
+										Почитание памяти наших граждан, пожертвовавших жизнью во имя свободы
+										Родины
+									</div>
+								</div>
+							</a>
+							<a href="" class="widget__card horizontal shadow">
+								<div class="widget__card_image">
+									<img src="/images/widget_card_image_3.jpg" alt="">
+								</div>
+								<div class="widget__card_content smaller">
+									<div class="info">
+										<div class="date">11:30 / 22.08.2022</div>
+										<div class="type">МЧС РУ</div>
+									</div>
+									<div class="title">
+										Почитание памяти наших граждан, пожертвовавших жизнью во имя свободы
+										Родины
+									</div>
+								</div>
+							</a>
+							<a href="" class="widget__card horizontal shadow">
+								<div class="widget__card_image">
+									<img src="/images/widget_card_image_3.jpg" alt="">
+								</div>
+								<div class="widget__card_content smaller">
+									<div class="info">
+										<div class="date">11:30 / 22.08.2022</div>
+										<div class="type">МЧС РУ</div>
+									</div>
+									<div class="title">
+										Почитание памяти наших граждан, пожертвовавших жизнью во имя свободы
+										Родины
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="news__widget">
+		<div class="container-xl">
+			<div class="news__widget_container">
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-6">
+						<div class="news__widget_header">
+							<h4 class="title">Патриотизм</h4>
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+									width="37.787" height="49.333" viewBox="0 0 37.787 49.333">
+									<defs>
+										<filter id="Контур_1920" x="0" y="0" width="37.787" height="49.333"
+											filterUnits="userSpaceOnUse">
+											<feOffset dy="3" input="SourceAlpha" />
+											<feGaussianBlur stdDeviation="3" result="blur" />
+											<feFlood flood-opacity="0.161" />
+											<feComposite operator="in" in2="blur" />
+											<feComposite in="SourceGraphic" />
+										</filter>
+									</defs>
+									<g id="Слой_x0020_1" transform="translate(-7242.115 -7417.655)">
+										<g transform="matrix(1, 0, 0, 1, 7242.11, 7417.66)" filter="url(#Контур_1920)">
+											<path id="Контур_1920-2" data-name="Контур 1920"
+												d="M7268.433,7436.7c.045.259.35.328.542.445a10.173,10.173,0,0,1,1.093.857l.244.107.138.158c.548.267.5,1.587.35,1.685-.055.106-.11.014-.223.064-.042.051-.085.1-.127.149l-.2.011c-.075.032-.088.1-.212.117a3,3,0,0,0-.743-.192.929.929,0,0,1-.19-.73l.18-.076a.654.654,0,0,1-.042-.052.517.517,0,0,1-.212-.223.644.644,0,0,1-.521-.159c-.044-.058-.051-.122-.117-.159l-.35-.052c-.121-.1-.24-.2-.361-.3h-.988c-.537-.151-.92-.54-1.527-.625a6.206,6.206,0,0,0-.711.148c.278.412.094.789.531,1.112l.084-.084c.107-.052.071-.156.149-.224l.573-.349c.142.047.283.091.425.137a2.676,2.676,0,0,1,.541.606q.2.242.4.486l.224.467a4.062,4.062,0,0,1,.477,1.135c-.007.3-.014.6-.021.9a2.586,2.586,0,0,0,.456.329c.033.151.064.3.1.456l.212.032.287.2c.025.1.05.2.074.3a3.13,3.13,0,0,1,.308.666,3.387,3.387,0,0,1-.286,2.184c-.154.239-.444.415-.563.689-.007.089-.015.177-.021.266-.057.331-.039.689-.1,1.05,0,.081-.007.163-.011.243-.109.263-.424.448-.541.721-.042.269-.085.538-.127.806-.019.116.043.34-.021.414l-.212.054a5.748,5.748,0,0,0,.138.953c-.01.063-.021.126-.031.19l.18.223v.149c.036.033.07.063.106.1.036.081.007.172.042.233l.16.106c-.028.193.063.135.138.253.01.051.021.1.031.149l.17.084.084.14c.111.147.2.145.255.379l.244.128h.35a1.643,1.643,0,0,1,.521.073,1.128,1.128,0,0,1,.573,1.124,2.763,2.763,0,0,1-2.738-.232,1.112,1.112,0,0,0-.361-.17c-.235-.029-.34.251-.51.308a2.44,2.44,0,0,1-1.083-.223,1.388,1.388,0,0,1-.031-.658l.128-.073a2.145,2.145,0,0,1,0-1.559c.077-.159.155-.319.232-.478-.028-.13-.057-.261-.085-.391l.032-.233h-.3q-.086-.09-.169-.181a1.61,1.61,0,0,0-.042-1.23c-.075-.125-.339-.3-.329-.477.148-.6.216-1.21.372-1.77.015-.227-.277-.372-.149-.743.106-.3.467-.354.626-.592.015-.021.212-.506.213-.509-.018-.093-.036-.184-.053-.277.042-.065.084-.133.126-.2l-.222-.307c-.575-.032-.534-.4-.892-.6-.893-.5-1.71-.956-2.611-1.442l-.361-.169c-.19-.148-.13-.467-.425-.53a.857.857,0,0,0-.6.222c-.242.2-.276.513-.455.773l-1,.923c-.141.186-.042.473-.138.721-.112.29-.378.406-.6.583-.525.654-.977,1.233-1.5,1.9-.962.935-.54.954-1.114,1.7-.142.185-.391.167-.594.3q-.144.234-.287.466c-.2.147-.4.3-.605.445l-.34.351-.711.371c-.072.4-.142.818-.212,1.2q.011.33.021.657a2.013,2.013,0,0,1-.308,1.113c-.7.052-1.741.207-2.165-.211-.008-.853.549-1.134.859-1.687.107-.309.212-.621.319-.932q.248-.411.5-.827c-.139-.593,0-.534.382-1.039v-.265a2.673,2.673,0,0,1,.064-.87c.163-.166.326-.331.488-.5.029-.109.057-.218.085-.328a2.785,2.785,0,0,1,.286-.7c.223-.335.921-.545,1.136-.868a3.664,3.664,0,0,0,.446-1.665l-.361-.2a1.1,1.1,0,0,1,.169-.6l.2-.593q.1-.3.2-.6c.023-.128-.086-.271-.042-.392.2-.551.551-.98.7-1.56.232-.055.33.053.5.127a.784.784,0,0,0,.053.4.68.68,0,0,0,.319.012c.068-.511.354-.8.424-1.272a3.275,3.275,0,0,0-.774.169,2.036,2.036,0,0,1-.913-.444c-.156-.257.058-.97.127-1.283.219-.993.137-1.7,1.008-2.078a1.992,1.992,0,0,1,.966-.16,20.355,20.355,0,0,1,.318-2.734c.057-.293.155-.754-.053-.922-.305-.25-.985-.094-1.465-.169l-.838-.043c-.24.07-.455.285-.721.35l-.446-.032a1.588,1.588,0,0,1-.657-.191c-.412-.281-.994-1-.573-1.644-.145-.358.335-.6.467-.879.014-.145.029-.29.042-.435l.33-.4c.01-.113.021-.227.031-.339.1-.241.387-.4.531-.6l.138-.276c.153-.3.216-.8.583-.88a1.113,1.113,0,0,1,.266-.6l.137-.149c.129-.288-.013-.993.149-1.241.074-.113.243-.069.361-.116.1-.252.172-.091.382-.191.032-.042.063-.085.1-.127.084-.025.169-.05.254-.074h.2l.075.137a.325.325,0,0,1,.254.042,1.68,1.68,0,0,0,.149.393l.127.063.181.276c-.054.13-.106.262-.16.393-.069.219-.007.5-.17.625-.424.31-.7.124-.976.667q-.117.234-.233.467c-.028.132.048.2-.022.35-.077.089-.155.177-.233.265a.847.847,0,0,0,.043.519.917.917,0,0,1-.127.679c.057.112.077.559.182.623.253-.1,1.289-.2,2.534-.539a3.385,3.385,0,0,1,.893-.2l.435-.094.6.126a.96.96,0,0,1,.637-.561c.217-.042.524.086.8.032l-.1-.106c-.227-.066-.769-.354-.838-.561-.087-.258.161-.719.222-.859.311-.707.33-1.593,1.019-1.917,1.256-.743,4.2.108,3.5,1.833a3.509,3.509,0,0,1,.226.756c-.283.114-.532.135-.7.367a1.542,1.542,0,0,1-.266,1.23c-.069.113-.33.563-.287.743.07.293.468.644.637.88.13.268.262.538.393.8q.015.187.031.371a5.876,5.876,0,0,1,.073.976c0,.3-.1.539.054.71-.017.082-.035.163-.054.243h-.01l-.127-.03c.046.042.092.085.137.126a1.725,1.725,0,0,0-.243.583l.075.19c.032.134-.042.257-.055.362s.119.27.055.369l-.128.192a1.141,1.141,0,0,0,.531.445c.081.02.162.042.244.063.146.084.169.237.339.308Z"
+												transform="translate(-7242.11 -7417.66)" fill="#457758"
+												fill-rule="evenodd" />
+										</g>
+									</g>
+								</svg>
+
+							</span>
+						</div>
+						<a href="" class="widget__card horizontal shadow no-image">
+							<div class="widget__card_content smaller">
+								<div class="info">
+									<div class="date">11:30 / 22.08.2022</div>
+									<div class="type">МЧС РУ</div>
+								</div>
+								<div class="title">
+									В книге «Стратегия нового Узбекистана» Президент Республики Узбекистан, Шавкат
+									Мирзиёев
+									дает подлинно научное толкование понятия военно
+								</div>
+							</div>
+						</a>
+						<a href="" class="widget__card horizontal shadow no-image">
+							<div class="widget__card_content smaller">
+								<div class="info">
+									<div class="date">11:30 / 22.08.2022</div>
+									<div class="type">МЧС РУ</div>
+								</div>
+								<div class="title">
+									В книге «Стратегия нового Узбекистана» Президент Республики Узбекистан, Шавкат
+									Мирзиёев
+									дает подлинно научное толкование понятия военно
+								</div>
+							</div>
+						</a>
+						<a href="" class="widget__card horizontal shadow no-image">
+							<div class="widget__card_content smaller">
+								<div class="info">
+									<div class="date">11:30 / 22.08.2022</div>
+									<div class="type">МЧС РУ</div>
+								</div>
+								<div class="title">
+									В книге «Стратегия нового Узбекистана» Президент Республики Узбекистан, Шавкат
+									Мирзиёев
+									дает подлинно научное толкование понятия военно
+								</div>
+							</div>
+						</a>
+						<a href="" class="widget__card horizontal shadow no-image">
+							<div class="widget__card_content smaller">
+								<div class="info">
+									<div class="date">11:30 / 22.08.2022</div>
+									<div class="type">МЧС РУ</div>
+								</div>
+								<div class="title">
+									В книге «Стратегия нового Узбекистана» Президент Республики Узбекистан, Шавкат
+									Мирзиёев
+									дает подлинно научное толкование понятия военно
+								</div>
+							</div>
+						</a>
+						<a href="" class="widget__card horizontal shadow no-image">
+							<div class="widget__card_content smaller">
+								<div class="info">
+									<div class="date">11:30 / 22.08.2022</div>
+									<div class="type">МЧС РУ</div>
+								</div>
+								<div class="title">
+									В книге «Стратегия нового Узбекистана» Президент Республики Узбекистан, Шавкат
+									Мирзиёев
+									дает подлинно научное толкование понятия военно
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="news__widget_header">
+							<h4 class="title">Военная аналитика</h4>
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+									width="100.267" height="52.807" viewBox="0 0 100.267 52.807">
+									<defs>
+										<filter id="Контур_1904" x="59.157" y="15.417" width="37.391" height="37.39"
+											filterUnits="userSpaceOnUse">
+											<feOffset dy="3" input="SourceAlpha" />
+											<feGaussianBlur stdDeviation="3" result="blur" />
+											<feFlood flood-opacity="0.161" />
+											<feComposite operator="in" in2="blur" />
+											<feComposite in="SourceGraphic" />
+										</filter>
+										<filter id="Контур_1905" x="11.396" y="11.343" width="37.39" height="37.39"
+											filterUnits="userSpaceOnUse">
+											<feOffset dy="3" input="SourceAlpha" />
+											<feGaussianBlur stdDeviation="3" result="blur-2" />
+											<feFlood flood-opacity="0.161" />
+											<feComposite operator="in" in2="blur-2" />
+											<feComposite in="SourceGraphic" />
+										</filter>
+										<filter id="Контур_1906" x="0" y="20.473" width="30.357" height="30.358"
+											filterUnits="userSpaceOnUse">
+											<feOffset dy="3" input="SourceAlpha" />
+											<feGaussianBlur stdDeviation="3" result="blur-3" />
+											<feFlood flood-opacity="0.161" />
+											<feComposite operator="in" in2="blur-3" />
+											<feComposite in="SourceGraphic" />
+										</filter>
+										<filter id="Контур_1907" x="73.826" y="9.917" width="26.44" height="26.441"
+											filterUnits="userSpaceOnUse">
+											<feOffset dy="3" input="SourceAlpha" />
+											<feGaussianBlur stdDeviation="3" result="blur-4" />
+											<feFlood flood-opacity="0.161" />
+											<feComposite operator="in" in2="blur-4" />
+											<feComposite in="SourceGraphic" />
+										</filter>
+										<filter id="Контур_1909" x="30.002" y="0" width="49.331" height="49.332"
+											filterUnits="userSpaceOnUse">
+											<feOffset dy="3" input="SourceAlpha" />
+											<feGaussianBlur stdDeviation="3" result="blur-5" />
+											<feFlood flood-opacity="0.161" />
+											<feComposite operator="in" in2="blur-5" />
+											<feComposite in="SourceGraphic" />
+										</filter>
+									</defs>
+									<g id="Слой_x0020_1" transform="translate(-9629.681 -4311.25)">
+										<g transform="matrix(1, 0, 0, 1, 9629.68, 4311.25)" filter="url(#Контур_1904)">
+											<path id="Контур_1904-2" data-name="Контур 1904"
+												d="M12659.264,5104.474a7.13,7.13,0,1,1-7.131,7.13A7.13,7.13,0,0,1,12659.264,5104.474Zm8.245,4.634.666-1.457-.954-1.653-1.547-.146c-.164-.185-.338-.361-.517-.529l-.151-1.6-1.654-.954-1.41.645c-.234-.076-.477-.144-.717-.2l-.928-1.306h-1.91l-.9,1.266c-.241.05-.484.113-.721.183l-1.457-.666-1.652.954-.146,1.549c-.182.164-.359.336-.528.517l-1.6.15-.956,1.655.646,1.411c-.077.234-.145.474-.2.717l-1.3.928v1.91l1.265.9c.05.243.111.485.185.721l-.666,1.458.955,1.652,1.547.146c.164.183.336.359.516.527l.153,1.6,1.653.956,1.408-.645c.236.077.477.145.718.2l.928,1.3h1.911l.9-1.264c.245-.052.486-.112.724-.185l1.455.667,1.652-.957.146-1.548c.185-.164.36-.337.529-.516l1.6-.152.953-1.655-.646-1.409c.077-.236.144-.474.2-.716l1.307-.928v-1.911l-1.266-.9C12667.643,5109.585,12667.58,5109.344,12667.509,5109.108Z"
+												transform="translate(-12581.41 -5080.49)" fill="#457758" />
+										</g>
+										<g transform="matrix(1, 0, 0, 1, 9629.68, 4311.25)" filter="url(#Контур_1905)">
+											<path id="Контур_1905-2" data-name="Контур 1905"
+												d="M10228.364,4897.114a7.13,7.13,0,1,1-7.131,7.13A7.13,7.13,0,0,1,10228.364,4897.114Zm8.245,4.634.666-1.457-.954-1.653-1.547-.146c-.164-.185-.339-.361-.517-.529l-.152-1.6-1.654-.954-1.409.645c-.235-.076-.476-.145-.718-.2l-.927-1.306h-1.91l-.9,1.266c-.24.05-.484.112-.721.183l-1.457-.666-1.652.954-.146,1.549c-.183.164-.36.336-.528.517l-1.6.15-.956,1.655.646,1.411c-.076.235-.144.474-.2.716l-1.3.928v1.91l1.265.9c.05.243.111.485.184.721l-.666,1.458.956,1.652,1.547.147c.164.182.336.358.515.526l.154,1.6,1.652.956,1.409-.646c.235.077.476.145.718.2l.928,1.3h1.911l.9-1.264c.244-.052.486-.112.723-.184l1.456.667,1.652-.956.146-1.548c.186-.165.361-.337.529-.516l1.6-.152.954-1.655-.646-1.409c.076-.236.144-.474.2-.716l1.306-.928v-1.912l-1.266-.9C10236.742,4902.225,10236.68,4901.984,10236.609,4901.748Z"
+												transform="translate(-10198.27 -4877.21)" fill="#457758" />
+										</g>
+										<g transform="matrix(1, 0, 0, 1, 9629.68, 4311.25)" filter="url(#Контур_1906)">
+											<path id="Контур_1906-2" data-name="Контур 1906"
+												d="M9644.859,5369.994a4.544,4.544,0,1,1,4.544-4.544A4.544,4.544,0,0,1,9644.859,5369.994Zm-5.255-2.953-.425.928.608,1.054.986.093c.1.118.216.23.329.337l.1,1.019,1.055.608.9-.411c.15.048.3.092.458.128l.591.832h1.217l.574-.807c.154-.031.309-.071.46-.116l.928.424,1.054-.607.093-.987c.116-.1.229-.214.337-.33l1.019-.1.608-1.055-.411-.9c.049-.149.092-.3.128-.457l.831-.591v-1.217l-.806-.573c-.032-.155-.07-.31-.117-.46l.425-.929-.609-1.053-.986-.093q-.157-.174-.328-.336l-.1-1.019-1.054-.609-.9.411c-.15-.049-.3-.092-.457-.128l-.591-.831H9644.3l-.572.806c-.156.033-.31.072-.461.118l-.928-.425-1.053.609-.094.987q-.176.157-.336.329l-1.021.1-.608,1.055.412.9c-.049.15-.092.3-.128.456l-.832.592v1.218l.807.572C9639.52,5366.737,9639.56,5366.89,9639.6,5367.041Z"
+												transform="translate(-9629.68 -5332.8)" fill="#457758" />
+										</g>
+										<g transform="matrix(1, 0, 0, 1, 9629.68, 4311.25)" filter="url(#Контур_1907)">
+											<path id="Контур_1907-2" data-name="Контур 1907"
+												d="M13400.412,4829.344a3.1,3.1,0,1,1,3.105-3.1A3.1,3.1,0,0,1,13400.412,4829.344Zm-3.588-2.017-.291.634.416.72.674.063c.07.081.146.157.225.23l.065.7.721.415.613-.281c.1.033.208.063.313.088l.4.568h.832l.392-.551c.105-.022.212-.049.314-.08l.634.29.72-.416.063-.674c.079-.072.156-.146.23-.225l.7-.065.416-.721-.281-.614q.05-.153.088-.312l.566-.4v-.832l-.55-.391a3.145,3.145,0,0,0-.08-.314l.29-.634-.416-.72-.674-.063c-.07-.08-.146-.156-.225-.229l-.066-.7-.719-.417-.613.281c-.1-.034-.207-.063-.312-.087l-.4-.568h-.832l-.391.551c-.106.022-.212.048-.314.08l-.635-.291-.719.417-.063.674c-.081.071-.157.146-.23.224l-.7.066-.416.72.282.613c-.034.1-.062.206-.088.312l-.568.4v.832l.551.391C13396.766,4827.12,13396.793,4827.224,13396.824,4827.327Z"
+												transform="translate(-13313.37 -4806.1)" fill="#457758" />
+										</g>
+										<g id="Сгруппировать_360" data-name="Сгруппировать 360"
+											transform="translate(9673.251 4324.311)">
+											<path id="Контур_1908" data-name="Контур 1908"
+												d="M11402.352,4682.343l.008.008Zm2.033,1.733.012.01Zm4.237.428c-.722.223-3.632,1.063-4.05,1.316-.035-.018-.066-.036-.094-.053a1.678,1.678,0,1,1-.094-1.691h0a12.834,12.834,0,0,1,1.172-1.134c-.1-.084-.225-.189-.361-.307.092-.113.174-.22.242-.316-.027-.027-.059-.057-.092-.087a1.252,1.252,0,0,1,.3-.217.3.3,0,0,1,.258-.052.769.769,0,0,0,.621-.356.363.363,0,0,0,.084-.24c.071-.054.167-.108.238-.162a2,2,0,0,1,.2-.172,1.3,1.3,0,0,0,.187-.184c.079-.09.044-.077.153-.121l.094-.079c.02-.006.241-.175.272-.2.093-.063.138-.124.177-.146a.569.569,0,0,1,.176-.146c.014-.008.238-.214.247-.224.047-.04.033-.052.092-.1l.071-.053c.035-.04.174-.194.174-.2,0-.05,0-.075-.031-.1a.1.1,0,0,0-.1-.007,2.262,2.262,0,0,1-.706.4c-.146.058-.227.136-.385.194-.243.076-.369.244-.6.256a.355.355,0,0,0-.219.073,1.676,1.676,0,0,1-.359.206,5.328,5.328,0,0,1-.629.245,1.441,1.441,0,0,1-.219.074c-.072.029-.134.057-.206.085l-.192.085a.376.376,0,0,0-.156.082.114.114,0,0,0-.082.066c-.09.093-.164.153-.26.248a1.9,1.9,0,0,1-.176-.223c-.11.085-.227.178-.349.276a3.4,3.4,0,0,1-.223-.261c-.46.343-.943.7-1.427,1.065l-.01.008c-1.748,1.333-3.506,2.872-4.149,4.85a1.493,1.493,0,0,0,1.031,1.333,23.615,23.615,0,0,0,6.009,1.242c.073.415.145.819.218,1.2a18.05,18.05,0,0,1,.854,5.4,11.544,11.544,0,0,0,11.832-3.746,20.425,20.425,0,0,0,.483-4.631c-.131-1.181-.371-2-.764-2.186l-.012.006c-.392-.24-3.022-1.018-3.923-1.292v-.012l-.769-.577c0,.014-.006.027-.01.042l-.037-.083-.02.038a2.361,2.361,0,0,1-.166-.717l.113-.135.1-.148.061-.1.042-.106.043-.2.071-.352.127,0,.1-.112.123-.388.165-.3.057-.13.052-.134.023-.208-.037-.111-.071-.1-.089-.06-.113-.023a.6.6,0,0,0-.166.065.117.117,0,0,1,.021-.052c.05-.1.094-.419.125-.461a.854.854,0,0,0,.066-.688.648.648,0,0,0,.085-.027l-.015-.778h.027c.026.063,0,.076.2.091.849.082,1.131-.23.315-.956a4.373,4.373,0,0,0-5.952,0c-.815.726-.533,1.038.314.956.242-.018.15-.034.225-.135l.035,0-.033,0c0,.272-.011.545-.016.816a.642.642,0,0,0,.088.027.372.372,0,0,0,.014.061l-.008.4a4.743,4.743,0,0,1,.084.6c0,.057-.037.1.019.119l.013.01-.241-.057-.113.023-.089.06-.071.1-.037.111.022.208.053.134.057.13.164.3.123.388.1.112.127,0,.07.352.043.2.042.106.062.1.1.148,0,0a3.716,3.716,0,0,1-.024.378l-.1.35-.006-.011-.019.062,0-.009-.776.568Z"
+												transform="translate(-11398.21 -4676.633)" fill="#457758"
+												fill-rule="evenodd" />
+										</g>
+										<g transform="matrix(1, 0, 0, 1, 9629.68, 4311.25)" filter="url(#Контур_1909)">
+											<path id="Контур_1909-2" data-name="Контур 1909"
+												d="M11181.346,4321.386a11.53,11.53,0,1,1-11.529,11.53A11.53,11.53,0,0,1,11181.346,4321.386Zm0-1.343a12.873,12.873,0,1,1-9.1,3.771A12.834,12.834,0,0,1,11181.346,4320.043Zm8.857,4.016a12.523,12.523,0,1,0,3.67,8.857A12.488,12.488,0,0,0,11190.2,4324.059Zm4.466,4.823,1.076-2.354-1.541-2.671-2.5-.236c-.265-.3-.546-.583-.834-.855l-.246-2.583-2.673-1.541-2.277,1.042c-.38-.123-.77-.233-1.159-.324l-1.5-2.11h-3.086l-1.457,2.045c-.39.082-.782.182-1.164.3l-2.354-1.075-2.671,1.541-.235,2.5c-.294.266-.582.544-.854.835l-2.583.243-1.544,2.674,1.044,2.279c-.124.379-.232.767-.324,1.158l-2.107,1.5v3.085l2.042,1.453c.082.392.18.784.3,1.165l-1.076,2.354,1.544,2.671,2.5.236c.266.295.544.579.832.852l.248,2.583,2.671,1.544,2.277-1.042c.38.123.769.233,1.159.324l1.5,2.107h3.09l1.449-2.043c.4-.084.785-.181,1.168-.3l2.354,1.078,2.67-1.545.235-2.5q.447-.4.854-.833l2.586-.246,1.541-2.674-1.044-2.277c.124-.381.232-.766.324-1.158l2.11-1.5V4331.5l-2.046-1.45C11194.885,4329.652,11194.783,4329.264,11194.669,4328.882Z"
+												transform="translate(-11126.68 -4311.25)" fill="#457758" />
+										</g>
+									</g>
+								</svg>
+
+							</span>
+						</div>
+						<a href="" class="widget__card horizontal shadow no-image">
+							<div class="widget__card_content smaller">
+								<div class="info">
+									<div class="date">11:30 / 22.08.2022</div>
+									<div class="type">МЧС РУ</div>
+								</div>
+								<div class="title">
+									В книге «Стратегия нового Узбекистана» Президент Республики Узбекистан, Шавкат
+									Мирзиёев
+									дает подлинно научное толкование понятия военно
+								</div>
+							</div>
+						</a>
+						<a href="" class="widget__card horizontal shadow no-image">
+							<div class="widget__card_content smaller">
+								<div class="info">
+									<div class="date">11:30 / 22.08.2022</div>
+									<div class="type">МЧС РУ</div>
+								</div>
+								<div class="title">
+									В книге «Стратегия нового Узбекистана» Президент Республики Узбекистан, Шавкат
+									Мирзиёев
+									дает подлинно научное толкование понятия военно
+								</div>
+							</div>
+						</a>
+						<a href="" class="widget__card horizontal shadow no-image">
+							<div class="widget__card_content smaller">
+								<div class="info">
+									<div class="date">11:30 / 22.08.2022</div>
+									<div class="type">МЧС РУ</div>
+								</div>
+								<div class="title">
+									В книге «Стратегия нового Узбекистана» Президент Республики Узбекистан, Шавкат
+									Мирзиёев
+									дает подлинно научное толкование понятия военно
+								</div>
+							</div>
+						</a>
+						<a href="" class="widget__card horizontal shadow no-image">
+							<div class="widget__card_content smaller">
+								<div class="info">
+									<div class="date">11:30 / 22.08.2022</div>
+									<div class="type">МЧС РУ</div>
+								</div>
+								<div class="title">
+									В книге «Стратегия нового Узбекистана» Президент Республики Узбекистан, Шавкат
+									Мирзиёев
+									дает подлинно научное толкование понятия военно
+								</div>
+							</div>
+						</a>
+						<a href="" class="widget__card horizontal shadow no-image">
+							<div class="widget__card_content smaller">
+								<div class="info">
+									<div class="date">11:30 / 22.08.2022</div>
+									<div class="type">МЧС РУ</div>
+								</div>
+								<div class="title">
+									В книге «Стратегия нового Узбекистана» Президент Республики Узбекистан, Шавкат
+									Мирзиёев
+									дает подлинно научное толкование понятия военно
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="news__widget_header">
+							<h4 class="title">Военная история</h4>
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+									width="53.43" height="52.807" viewBox="0 0 53.43 52.807">
+									<defs>
+										<filter id="Контур_1919" x="0" y="0" width="53.43" height="52.807"
+											filterUnits="userSpaceOnUse">
+											<feOffset dy="3" input="SourceAlpha" />
+											<feGaussianBlur stdDeviation="3" result="blur" />
+											<feFlood flood-opacity="0.161" />
+											<feComposite operator="in" in2="blur" />
+											<feComposite in="SourceGraphic" />
+										</filter>
+									</defs>
+									<g id="Слой_x0020_1" transform="translate(4341.83 -1555.789)">
+										<g transform="matrix(1, 0, 0, 1, -4341.83, 1555.79)" filter="url(#Контур_1919)">
+											<path id="Контур_1919-2" data-name="Контур 1919"
+												d="M-4320.071,1572.4l-.13-.22Zm0,0a1.373,1.373,0,0,1,.606.14c.248.014.488-.25.859-.594.422-.391.05-.337.792-.337-.392.816-.03.307.152,1.315a3.112,3.112,0,0,1,.074.6c-.622.416-.667.179-1.581.79-.371-.7-.07-.551-.193-1.06C-4319.477,1572.782-4319.84,1572.718-4320.071,1572.4Zm5.532-9.371c-.711,0-.763-.088-1.067.626l-.513,1.2c-.512.921-.226.146-.226,1,0,.223-.339.165-.339.564,0,.636.569.191.9.113-.134.5-.478.507-.775.918l-1.624,1.1c-.375.112-.314.138-.673.055l-1.4-.424c-3.764-.735-2.043-.923-3.785-1.549-.67-.241-.748.292.011.469-.232.2-.17.193-.565.226.257.351.3.226.9.226v.113c-.64,0-.434-.1-.565.226.492,0,.553-.084.875.141l.826.529c1.5.813,2.877,1.814,4.734,1.814v.226a7.538,7.538,0,0,0-1.971.851c-.261.145-.337.238-.625.391-.249-.371-.728-.679-.9-1.016-.571-1.088.184-.977-1.257-1.566a1.355,1.355,0,0,1-.591-.425c-.77-.746-.656-.254-1.476-.556-.289-.106-.1-.152-.583-.321-.283-.1-.529-.1-.807-.209a5.206,5.206,0,0,0-1.558-.476,4.639,4.639,0,0,0-3.212.617,4.6,4.6,0,0,0-1.58-.452c.3.45.49.45.79,1.016a2.3,2.3,0,0,1-1.242-.226,3.767,3.767,0,0,0,.473,1.108l.508,1.186c.235.924.1,1.058.74,1.631l1.677,2.5a2.714,2.714,0,0,0,.4.395c.582.427.823.819,1.627.631.058.7.365.663.677,1.129a14.615,14.615,0,0,1-.791,1.355l.678,1.242-1.468.113c-.777,0-1.173-.339-1.693-.339-.359,0-1.129.682-1.129,1.016,0,2.21.348.723,1.454,3.627.144.376.183.626.308,1.047.311,1.048.812.757,1.3,1.407l.747.608c2.216,1.114,1.269-.362,1.269-1.834-2.01,0-1.663.162-1.529-.715.086-.56.108.5-.021-.226-.108-.607-.6.131-1.127-1.235a5.448,5.448,0,0,1-.6-1.775,6.336,6.336,0,0,1,2.882.731l1.521,1.527a13.867,13.867,0,0,0-.5,1.528c-.323,1.8.151,1.575-.8,3.149l-.318.7c-.01.028-.019.057-.029.085l-.239,1.116a21.515,21.515,0,0,1-1.619,3.7c-.441.915-.521.549-1.261.884-.333.151-.249.278-.409.607a2.464,2.464,0,0,0-.327.8c.512,0,.719-.081,1.035-.1.554-.026.47.205.925.031.411-.158.326-.36.4-.734.156-.75.043-.3.65-.478.716-.213.545-1.592,1.74-4.027.391-.8.893-1.06,1.231-2.156a6.327,6.327,0,0,1,1.266-2.235c.29-.26,0-.053.378-.192a3,3,0,0,1,1.081-.058c.394,0,.6-.374.7-.754.131-.509-.088-.849.506-.849a1.2,1.2,0,0,1,.8.218c.019.014.043.037.061.052s.041.039.059.054.041.039.059.054l.377.3c.445-.161.013-.017.452-.339-.052.222-.188.79.452.79.556,0,.564-.123.564-.677.328.24.213-.016.226.564h.678c.145-.543.7-.25,2.5-.546,1.209-.2,2.639-1.077,3.072.173.424,1.223-1.236,1.113,2.014,3.285a4.975,4.975,0,0,0,2.8,1.265c-.074.888-1.862,1.847-2.467,2.5-.445.48-.122,1.281-.391,1.879-.08.177-.191.085-.191.362,0,.308.1.146.228.562l.111,1.244c1.349-.03,1.184-1.128,2.033-1.354a2.279,2.279,0,0,0-.565-1.242c.532-.794,2.38-3.161,3.274-3.161.411,0,.784.636,1.018.9s.135.118.353.324a10.893,10.893,0,0,1,1.04,1.67c.718,1.414.86,1.66-.175,2.621s1.034.693,1.491.693c.594,0,.172-.5.2-.66.064-.333.47-.192.812-.356.257-1.1-.349-1.143-.867-2.182-.158-.318-.227-.572-.374-.868a11.311,11.311,0,0,1-.825-2.45c-.519-2.235-.686-1.225-1.6-1.784a4.573,4.573,0,0,1-1.764-2.088c-.167-.436.372-1.4.661-1.722,1.813-2.011,1.158-2.506,1.158-4.487a2.792,2.792,0,0,1,1.281,1.542c.791,1.578.221,2.545.792,3.384.251.37.322.594.524.944a1.814,1.814,0,0,0,.292.386c.256.277.14.048.354.439.352.642.143.538.143,1.1,0,.749.644,1.039.968,1.516a3,3,0,0,0,.919,1.016c.125.077-.083.035.188.089s.273-.039.34-.175a.64.64,0,0,0,.028-.06l.019-.133c0-.018,0-.052,0-.071l-.087-2.07c0-.636-.307-.745-.587-1.11-.608-.792.023-.42.023-1.712a34.474,34.474,0,0,0-1.175-4.471c-1.594-3.941-3.944-2.3-5.035-2.3a1.463,1.463,0,0,1-1.242-.9c.572,0,.674-.118,1.116-.093l1.142-.02c-.269-.367.041-.145-.526-.264a48.536,48.536,0,0,1-6.417-1.486c-.38-.187-.518-.666-.816-.99a4.2,4.2,0,0,0-2.515-1.1c-.128-1.55.339-.527.339-2.145l1.933.777c.838.5.122.531,1.822.887a5.469,5.469,0,0,0,2.584.271c1.424-.083,1.269.618,1.6-1.455.085-.537.272-1.094-.295-1.459-.153-.1-2.6-.6-3.276-.9-.579-.258-.641-.6-1.221-.812-.86-.31-.778-.729-2-1.164-.181-.064-.672-.177-.861-.268-.525-.257-.607-.8-1.188-.957a3.413,3.413,0,0,1,1.243-1.242l-.565-1.242c.8-1.192,1.389-1.165,1.694-1.581a.813.813,0,0,1-.113-.339c-.615.051-.757.59-1.15.995-.8.817-.79.247-1.56.247Z"
+												transform="translate(4341.83 -1555.79)" fill="#457758"
+												fill-rule="evenodd" />
+										</g>
+									</g>
+								</svg>
+
+							</span>
+						</div>
+						<a href="" class="widget__card horizontal shadow no-image">
+							<div class="widget__card_content smaller">
+								<div class="info">
+									<div class="date">11:30 / 22.08.2022</div>
+									<div class="type">МЧС РУ</div>
+								</div>
+								<div class="title">
+									В книге «Стратегия нового Узбекистана» Президент Республики Узбекистан, Шавкат
+									Мирзиёев
+									дает подлинно научное толкование понятия военно
+								</div>
+							</div>
+						</a>
+						<a href="" class="widget__card horizontal shadow no-image">
+							<div class="widget__card_content smaller">
+								<div class="info">
+									<div class="date">11:30 / 22.08.2022</div>
+									<div class="type">МЧС РУ</div>
+								</div>
+								<div class="title">
+									В книге «Стратегия нового Узбекистана» Президент Республики Узбекистан, Шавкат
+									Мирзиёев
+									дает подлинно научное толкование понятия военно
+								</div>
+							</div>
+						</a>
+						<a href="" class="widget__card horizontal shadow no-image">
+							<div class="widget__card_content smaller">
+								<div class="info">
+									<div class="date">11:30 / 22.08.2022</div>
+									<div class="type">МЧС РУ</div>
+								</div>
+								<div class="title">
+									В книге «Стратегия нового Узбекистана» Президент Республики Узбекистан, Шавкат
+									Мирзиёев
+									дает подлинно научное толкование понятия военно
+								</div>
+							</div>
+						</a>
+						<a href="" class="widget__card horizontal shadow no-image">
+							<div class="widget__card_content smaller">
+								<div class="info">
+									<div class="date">11:30 / 22.08.2022</div>
+									<div class="type">МЧС РУ</div>
+								</div>
+								<div class="title">
+									В книге «Стратегия нового Узбекистана» Президент Республики Узбекистан, Шавкат
+									Мирзиёев
+									дает подлинно научное толкование понятия военно
+								</div>
+							</div>
+						</a>
+						<a href="" class="widget__card horizontal shadow no-image">
+							<div class="widget__card_content smaller">
+								<div class="info">
+									<div class="date">11:30 / 22.08.2022</div>
+									<div class="type">МЧС РУ</div>
+								</div>
+								<div class="title">
+									В книге «Стратегия нового Узбекистана» Президент Республики Узбекистан, Шавкат
+									Мирзиёев
+									дает подлинно научное толкование понятия военно
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container-lg">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__logo">
+						<img src="/images/army-logo.svg" alt="">
+					</div>
+					<div class="footer__top_navs">
+						<ul class="nav ">
+							<li class="nav-item nav-header">
+								НОВОСТИ
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">По Узбекистану</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">По региональну</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В Мире</a>
+							</li>
+						</ul>
+						<ul class="nav ">
+							<li class="nav-item nav-header">
+								Патриотизм
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В МО РУ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В НГ РУ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В СГБ РУ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В МВД РУ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В МЧС РУ</a>
+							</li>
+						</ul>
+						<ul class="nav ">
+							<li class="nav-item nav-header">
+								Военная аналитика
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В МО РУ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В НГ РУ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В СГБ РУ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В МВД РУ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В МЧС РУ</a>
+							</li>
+						</ul>
+						<ul class="nav ">
+							<li class="nav-item nav-header">
+								Военная история
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Военная история</a>
+							</li>
+						</ul>
+						<ul class="nav">
+							<li class="nav-item nav-header">
+								Медиа
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Фотогалерия</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Видеогалерия</a>
+							</li>
+							<li class="nav-item nav-header">
+								Контакты
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="copyright">
+						<p>При использовании материалов ссылка на www.Armiya.uz обязательна</p>
+						<p>© 2022 Официальный веб-сайт Все о Вооруженных силах Республики Узбекистан
+							Все права защищены</p>
+					</div>
+					<div class="footer__bottom_middle">
+						<ul class="social">
+							<li class="social__item">
+								<a href="" class="social__link">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+										<g id="Сгруппировать_345" data-name="Сгруппировать 345"
+											transform="translate(-900 -3044.54)">
+											<circle id="Эллипс_10" data-name="Эллипс 10" cx="9" cy="9" r="9"
+												transform="translate(900 3044.54)" fill="#fff" />
+											<g id="Сгруппировать_64" data-name="Сгруппировать 64"
+												transform="translate(36.272 2212.353)">
+												<path id="Контур_1667" data-name="Контур 1667"
+													d="M2426.909,801.563v1.6h-1.849v2.105h1.849v5.267h2.276v-5.267h1.7l.323-2.105h-2.02V801.8a1.052,1.052,0,0,1,1.187-1.137h.918v-1.792a11.179,11.179,0,0,0-1.63-.142A2.57,2.57,0,0,0,2426.909,801.563Z"
+													transform="translate(-1555.447 36.27)" fill="#345a43" />
+											</g>
+										</g>
+									</svg>
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="" class="social__link">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+										<g id="Сгруппировать_344" data-name="Сгруппировать 344"
+											transform="translate(-934 -3044.54)">
+											<circle id="Эллипс_11" data-name="Эллипс 11" cx="9" cy="9" r="9"
+												transform="translate(934 3044.54)" fill="#fff" />
+											<g id="Сгруппировать_67" data-name="Сгруппировать 67"
+												transform="translate(34.634 2210.527)">
+												<path id="Контур_1669" data-name="Контур 1669"
+													d="M3250.254,861.66a.705.705,0,1,0,.705.705A.706.706,0,0,0,3250.254,861.66Z"
+													transform="translate(-2338.705 -22.451)" fill="#345a43"
+													fill-rule="evenodd" />
+												<path id="Контур_1670" data-name="Контур 1670"
+													d="M3139.612,891.949a1.9,1.9,0,1,1,1.9-1.9A1.9,1.9,0,0,1,3139.612,891.949Zm0-4.859a2.962,2.962,0,1,0,2.961,2.962A2.966,2.966,0,0,0,3139.612,887.09Z"
+													transform="translate(-2231.196 -47.176)" fill="#345a43"
+													fill-rule="evenodd" />
+												<path id="Контур_1671" data-name="Контур 1671"
+													d="M3077.053,826.022a2.484,2.484,0,0,0-2.481,2.481v4.8a2.484,2.484,0,0,0,2.481,2.481h4.8a2.483,2.483,0,0,0,2.481-2.481v-4.8a2.483,2.483,0,0,0-2.481-2.481Zm4.8,10.894h-4.8a3.616,3.616,0,0,1-3.612-3.612v-4.8a3.616,3.616,0,0,1,3.612-3.612h4.8a3.617,3.617,0,0,1,3.612,3.612v4.8A3.616,3.616,0,0,1,3081.854,836.915Z"
+													transform="translate(-2171.087 12.11)" fill="#345a43"
+													fill-rule="evenodd" />
+											</g>
+										</g>
+									</svg>
+
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="" class="social__link">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+										<g id="Сгруппировать_343" data-name="Сгруппировать 343"
+											transform="translate(-968 -3044.54)">
+											<circle id="Эллипс_12" data-name="Эллипс 12" cx="9" cy="9" r="9"
+												transform="translate(968 3044.54)" fill="#fff" />
+											<g id="Сгруппировать_65" data-name="Сгруппировать 65"
+												transform="translate(32.982 2209.571)">
+												<g id="_1593739195808" transform="translate(937.017 838.996)">
+													<path id="Контур_1673" data-name="Контур 1673"
+														d="M3818.49,859.68l1.388,3.764,6.158-8.553Z"
+														transform="translate(-3815.151 -853.419)" fill="#6a947b" />
+													<path id="Контур_1674" data-name="Контур 1674"
+														d="M3843.313,953.64l-.133,2.965,3.25-2.756Z"
+														transform="translate(-3838.435 -946.543)" fill="#345a43" />
+													<path id="Контур_1675" data-name="Контур 1675"
+														d="M3772.274,829.106l-12.138,4.612a.391.391,0,0,0,.013.736l3.13,1.057,7.127-4.6-5.645,5.265,4.4,3.335a.8.8,0,0,0,1.259-.443l2.375-9.5A.391.391,0,0,0,3772.274,829.106Z"
+														transform="translate(-3759.884 -829.08)" fill="#345a43" />
+												</g>
+											</g>
+										</g>
+									</svg>
+
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="" class="social__link">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+										<g id="Сгруппировать_342" data-name="Сгруппировать 342"
+											transform="translate(-1002 -3044.54)">
+											<path id="Контур_1863" data-name="Контур 1863"
+												d="M9,0A9,9,0,1,1,0,9,9,9,0,0,1,9,0Z"
+												transform="translate(1002 3044.54)" fill="#fff" />
+											<g id="Сгруппировать_66" data-name="Сгруппировать 66"
+												transform="translate(26.203 2213.219)">
+												<path id="Контур_1676" data-name="Контур 1676"
+													d="M4592.1,710.574,4589,712.111c-.122.066-.536-.022-.536-.161v-3.156c0-.14.417-.228.54-.158l2.974,1.618C4592.1,710.325,4592.229,710.505,4592.1,710.574Zm4.075-1.853a2.71,2.71,0,0,0-2.71-2.71h-6.929a2.711,2.711,0,0,0-2.71,2.71v3.224a2.71,2.71,0,0,0,2.71,2.71h6.929a2.709,2.709,0,0,0,2.71-2.71Z"
+													transform="translate(-3605.207 129.99)" fill="#345a43" />
+											</g>
+										</g>
+									</svg>
+								</a>
+							</li>
+						</ul>
+						<div class="contacts">
+							<a href="" class="contacts__link email">
+								info@O'R QK.uz
+							</a>
+							<a href="" class="contacts__link phone">
+								+99871 288-88-88
+							</a>
+						</div>
+
+					</div>
+					<a href="" class="developer">
+						<svg xmlns="http://www.w3.org/2000/svg" width="168" height="42.506" viewBox="0 0 168 42.506">
+							<g id="Сгруппировать_352" data-name="Сгруппировать 352"
+								transform="translate(-1376 -3293.529)">
+								<text id="_2003-2022_Единый_интегратор_по_созданию_и_поддержке"
+									data-name="© 2003-2022 Единый интегратор по созданию и поддержке"
+									transform="translate(1376 3323.688)" fill="#fff" font-size="6"
+									font-family="Roboto-Regular, Roboto">
+									<tspan x="0" y="0">© 2003-2022 Единый интегратор по созданию и поддержке</tspan>
+								</text>
+								<text id="государственных_информационных_систем"
+									data-name="государственных информационных систем"
+									transform="translate(1376 3334.035)" fill="#fff" font-size="6"
+									font-family="Roboto-Regular, Roboto">
+									<tspan x="0" y="0">государственных информационных систем</tspan>
+								</text>
+								<g id="Слой_x0020_1" transform="translate(-50441.301 -26735.031)">
+									<path id="Контур_1864" data-name="Контур 1864"
+										d="M51817.3,30095.551v5.479a2.275,2.275,0,0,0,1.16,1.982,5.309,5.309,0,0,0,1.9-.377,22.11,22.11,0,0,0,5.355-3.129.043.043,0,0,1,.055.01.034.034,0,0,1-.008.045c-.566.543-1.133,1.061-1.691,1.541q-.867.735-1.687,1.367h0l-.32.24h0q-.41.313-.82.59h7.016c.52-.6.488-1.648,0-3.01a22.193,22.193,0,0,0-3.133-5.359.035.035,0,0,1,.008-.049.034.034,0,0,1,.051,0h0c.539.568,1.059,1.135,1.539,1.7s.918,1.1,1.332,1.635a12.876,12.876,0,0,0,1.332-3.609,2.45,2.45,0,0,0-.387-2.139c-.586-.594-1.672-.584-3.09-.074a22.11,22.11,0,0,0-5.355,3.129.05.05,0,0,1-.059-.006.054.054,0,0,1,.008-.049h0c.57-.543,1.141-1.061,1.7-1.537s1.105-.922,1.637-1.336a12.86,12.86,0,0,0-3.613-1.33,2.4,2.4,0,0,0-2.137.387c-.594.58-.586,1.668-.078,3.088a22.193,22.193,0,0,0,3.133,5.359.035.035,0,0,1-.012.051c-.016.014-.035.01-.039-.006-.551-.568-1.062-1.135-1.543-1.7s-.949-1.133-1.371-1.682h0l-.242-.322h0C51817.723,30096.139,51817.508,30095.844,51817.3,30095.551Zm17.273-9.531h-15.008a2.271,2.271,0,0,0-2.266,2.27v.5a7.494,7.494,0,0,1,1.355.361,23.523,23.523,0,0,1,5.57,3.146,18.571,18.571,0,0,1,4.508-2.607c1.23-.436,2.191-.441,2.727.074.6.582.582,1.746.039,3.266a23.932,23.932,0,0,1-3.148,5.572,18.333,18.333,0,0,1,2.605,4.51c.02.063.047.127.066.186h1.285a2.272,2.272,0,0,0,2.266-2.27Z"
+										transform="translate(-0.004 -57.097)" fill="#fff" fill-rule="evenodd" />
+									<g id="_1611176656112" transform="translate(51838.75 30028.561)">
+										<path id="Контур_1865" data-name="Контур 1865"
+											d="M75342.3,30092.613h-2.172l.008-14.1-4.039,10.621a2.341,2.341,0,0,1-4.336,0l-4.078-9.949.008,3.8v7.924a1.543,1.543,0,0,1-1.7,1.7h-1.836v-15.783l.008-.039v-.041l.008-.041.008-.039v-.041l.008-.035.008-.041.023-.041v-.039l.016-.037.016-.037.016-.039.023-.037.023-.037.016-.037.016-.039.016-.039.023-.033.023-.035.023-.035.016-.035.031-.033h0l.023-.039.023-.033h0l.031-.029.023-.035.023-.031.031-.031.023-.029.031-.035.039-.025.031-.029.023-.031h0l.039-.027.031-.025.023-.027.039-.025.031-.025.039-.023h0l.031-.02.039-.025.031-.023.031-.02.047-.02.039-.02.039-.016.031-.018.039-.018.039-.018h0l.039-.012.031-.01.039-.014.039-.014.039-.006.039-.01h0l.047-.008h0l.039-.01.047,0,.031,0,.047,0h4.109l4.164,11.1,4.008-10.154a1.583,1.583,0,0,1,1.516-.945H75344v15.705C75344,30092.074,75343.523,30092.611,75342.3,30092.613Z"
+											transform="translate(-75197.516 -30074.91)" fill="#fff" />
+										<path id="Контур_1866" data-name="Контур 1866"
+											d="M72166.844,30031.938a3.929,3.929,0,0,0-3.281,1.547,6.489,6.489,0,0,0-1.219,4.1,6.38,6.38,0,0,0,1.219,4.1,3.868,3.868,0,0,0,3.172,1.5,3.95,3.95,0,0,0,3.234-1.465,6.282,6.282,0,0,0,1.172-4.062,6.8,6.8,0,0,0-1.148-4.211A3.739,3.739,0,0,0,72166.844,30031.938Zm-.016-3.375h.234a7.885,7.885,0,0,1,5.922,2.438,9.058,9.058,0,0,1,2.3,6.436,9.215,9.215,0,0,1-2.406,6.619,8.9,8.9,0,0,1-12.312.08,8.746,8.746,0,0,1-2.352-6.346,9.42,9.42,0,0,1,2.383-6.676A8.281,8.281,0,0,1,72166.828,30028.563Z"
+											transform="translate(-72051.516 -30028.563)" fill="#fff" />
+										<path id="Контур_1867" data-name="Контур 1867"
+											d="M69756.242,30046.033a12.173,12.173,0,0,1-4.031.561,8.367,8.367,0,0,1-6.3-2.352,8.577,8.577,0,0,1-2.3-6.279,9.162,9.162,0,0,1,2.578-6.773,9,9,0,0,1,6.648-2.6h.141a13.416,13.416,0,0,1,2.391.2c1.031.18,1.8.527,1.82,1.77v1.018c-.117,1.051-.984.949-1.469.8a8.18,8.18,0,0,0-2.516-.4,5.282,5.282,0,0,0-3.961,1.541,6.484,6.484,0,0,0-.094,8.2,5.038,5.038,0,0,0,3.828,1.5,11.292,11.292,0,0,0,2.781-.5c.594-.133,1.43.137,1.43.764v.92C69757.156,30045.418,69756.844,30045.83,69756.242,30046.033Z"
+											transform="translate(-69652.125 -30028.59)" fill="#fff" />
+										<path id="Контур_1868" data-name="Контур 1868"
+											d="M66759.234,30031.938a3.9,3.9,0,0,0-3.273,1.547,6.44,6.44,0,0,0-1.211,4.1,6.332,6.332,0,0,0,1.211,4.1,3.858,3.858,0,0,0,3.172,1.5,3.9,3.9,0,0,0,3.211-1.465,6.24,6.24,0,0,0,1.2-4.062,6.752,6.752,0,0,0-1.156-4.211A3.758,3.758,0,0,0,66759.234,30031.938Zm-.016-3.375h.234a7.843,7.843,0,0,1,5.914,2.438,8.985,8.985,0,0,1,2.3,6.436,9.2,9.2,0,0,1-2.383,6.619,8.9,8.9,0,0,1-12.312.08,8.714,8.714,0,0,1-2.352-6.346,9.322,9.322,0,0,1,2.391-6.676A8.234,8.234,0,0,1,66759.219,30028.563Z"
+											transform="translate(-66677.977 -30028.563)" fill="#fff" />
+										<path id="Контур_1869" data-name="Контур 1869"
+											d="M64881.383,30078.381h-6.141v4.275h3.93a1.833,1.833,0,0,1,1.711,1.707v1.471h-5.641v6.766h-2.227a1.838,1.838,0,0,1-1.7-1.707v-15.7h8.367a1.832,1.832,0,0,1,1.7,1.7Z"
+											transform="translate(-64810.516 -30074.896)" fill="#fff" />
+										<path id="Контур_1870" data-name="Контур 1870"
+											d="M61767.027,30092.146a2.7,2.7,0,0,1-2.523-1.025l-6.512-9.92c-.41-.639-.707-1.117-.867-1.443h-.047c.063.613.094,1.557.094,2.813v8.244c0,.6-.422,1.328-1,1.328h-2.7v-15.7a2.158,2.158,0,0,1,2.34-1.707,2.846,2.846,0,0,1,2.547,1.01l6.246,9.59c.313.479.6.949.879,1.42h.043a17.789,17.789,0,0,1-.094-2.393v-7.934a1.832,1.832,0,0,1,1.707-1.693h2v15.7A1.942,1.942,0,0,1,61767.027,30092.146Z"
+											transform="translate(-61712.313 -30074.438)" fill="#fff" />
+										<path id="Контур_1871" data-name="Контур 1871"
+											d="M60505.27,30092.611h-2.23v-15.705a1.833,1.833,0,0,1,1.711-1.7h2.215v15.711A1.83,1.83,0,0,1,60505.27,30092.611Z"
+											transform="translate(-60469.758 -30074.908)" fill="#fff" />
+										<path id="Контур_1872" data-name="Контур 1872"
+											d="M57892.41,30092.611h-10.625a1.745,1.745,0,0,1-1.152-2.994l8.371-11.225h-8.277v-1.482a1.831,1.831,0,0,1,1.715-1.707h11.641a5.264,5.264,0,0,1-.879,3.408l-7.852,10.818h8.75v1.484A1.829,1.829,0,0,1,57892.41,30092.611Z"
+											transform="translate(-57863.391 -30074.908)" fill="#fff" />
+										<path id="Контур_1873" data-name="Контур 1873"
+											d="M55235.473,30085.092q0,7.825-7.277,7.842h-.055q-7.055-.015-7.062-7.658l.008-8.35a1.589,1.589,0,0,1,1.7-1.7h2.223v10.1q0,4.23,3.309,4.227,3.24,0,3.234-4.078v-8.541a1.852,1.852,0,0,1,1.711-1.7h2.211Z"
+											transform="translate(-55221.078 -30074.928)" fill="#fff" />
+									</g>
+								</g>
+							</g>
+						</svg>
+
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<div class="modal search__modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+
+					<h1>Поиск</h1>
+					<form class="navbar-form " role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Поиск">
+						</div>
+						<button type="submit" class="btn btn-success mt-2">Найти</button>
+					</form>
+
+
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<body>
+	<script src="/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="/libs/splide/dist/js/splide.min.js"></script>
+	<script src="js/common.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Simple Starter</title>
+	<meta name="description" content="Simple Starter Description">
+
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/preview.jpg">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/splide/dist/css/splide.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+</head>
+<div id="app">
+	<header class="header">
+		<div class="container-lg">
+			<div class="header__container">
+				<div class="header__left">
+					<a href="" class="header__armed-logo">
+						<img src="/images/armed-logo.svg" alt="">
+					</a>
+				</div>
+				<div class="header__middle">
+					<a href="" class="header__army-logo">
+						<img src="/images/army-logo.svg" alt="">
+					</a>
+					<ul class="nav" id="header_nav">
+						<li class="nav-item">
+							<a href="" class="nav-link">
+								<svg id="Слой_x0020_1" xmlns="http://www.w3.org/2000/svg" width="17.14" height="15.215"
+									viewBox="0 0 17.14 15.215">
+									<path id="Контур_1684" data-name="Контур 1684"
+										d="M689.8,2713.926l.021,4.757a2.371,2.371,0,0,1-.014.241v.482a1.19,1.19,0,0,1-1.191,1.188h-.475c-.033,0-.067-.027-.1,0-.041-.024-.084,0-.125,0h-1.681a1.19,1.19,0,0,1-1.191-1.188v-2.615a.951.951,0,0,0-.952-.952h-1.9a.951.951,0,0,0-.953.952v2.615a1.188,1.188,0,0,1-1.19,1.188h-1.663c-.046,0-.091,0-.135-.006s-.072.006-.106.006h-.477a1.188,1.188,0,0,1-1.19-1.188v-3.329c0-.027,0-.055,0-.082v-2.069h-.953a.941.941,0,0,1-.953-.953.965.965,0,0,1,.3-.714l7.631-6.642a.861.861,0,0,1,.654-.238,1,1,0,0,1,.627.208q3.8,3.338,7.6,6.672a.8.8,0,0,1,.327.714.961.961,0,0,1-.953.953H689.8Z"
+										transform="translate(-674.57 -2705.38)" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="" class="nav-link" data-bs-toggle="dropdown" role="button">Новости</a>
+							<div class="dropdown-menu">
+								<a href="" class="dropdown-item">По Узбекистану</a>
+								<a href="" class="dropdown-item">По региональну</a>
+								<a href="" class="dropdown-item">В Мире</a>
+								<a href="" class="dropdown-item">Видео</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Патриотизм</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Военная Аналитика</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Военная история</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header__right">
+					<div class="nav nav__info flex-column">
+						<li class="nav-item">
+							<div class="nav-link">Вторник, 8 ноября 2022</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Отзывы</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Контакты</a>
+						</li>
+					</div>
+					<div class="dropdown nav__lang">
+						<button class="btn dropdown-toggle" data-bs-toggle="dropdown">
+							Рус
+						</button>
+						<div class="dropdown-menu">
+							<a href="" class="dropdown-item">Uzb</a>
+							<a href="" class="dropdown-item">Eng</a>
+						</div>
+					</div>
+
+					<div class="special_part ">
+						<a href="#" class="btn icon_accessibility dataTooltip " data-toggle="dropdown"
+							data-placement="bottom" title="Махсус имкониятлар" aria-expanded="false">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 21.964 14.642">
+								<path id="Icon_awesome-eye" data-name="Icon awesome-eye"
+									d="M21.831,11.264A12.23,12.23,0,0,0,10.982,4.5,12.232,12.232,0,0,0,.133,11.265a1.234,1.234,0,0,0,0,1.113,12.23,12.23,0,0,0,10.849,6.764,12.232,12.232,0,0,0,10.849-6.765A1.234,1.234,0,0,0,21.831,11.264ZM10.982,17.312a5.491,5.491,0,1,1,5.491-5.491A5.491,5.491,0,0,1,10.982,17.312Zm0-9.151a3.634,3.634,0,0,0-.965.145,1.825,1.825,0,0,1-2.551,2.551,3.652,3.652,0,1,0,3.516-2.7Z"
+									transform="translate(0 -4.5)" fill="#FFFFFF"></path>
+							</svg>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right specialViewArea no-propagation" style="">
+							<div class="triangle2"></div>
+
+							<div class="appearance">
+								<p class="specialTitle">Ko'rinish</p>
+
+								<div class="squareAppearances">
+									<div class="squareBox spcNormal" data-toggle="tooltip" data-placement="bottom"
+										title="" data-original-title="Oddiy ko'rinish">A
+									</div>
+								</div>
+								<div class="squareAppearances">
+									<div class="squareBox spcWhiteAndBlack" data-toggle="tooltip"
+										data-placement="bottom" title="" data-original-title="Oq-qora ko'rinish">A
+									</div>
+								</div>
+								<div class="squareAppearances">
+									<div class="squareBox spcDark" data-toggle="tooltip" data-placement="bottom"
+										title="" data-original-title="Qorong'ilashtirilgan ko'rinish">A
+									</div>
+								</div>
+							</div>
+
+							<div class="appearance">
+								<p class="specialTitle">Shrift hajmi</p>
+
+								<div class="block blocked">
+									<div class="sliderText"><span class="range">0</span>% ga kattalashtirish</div>
+									<div id="fontSizer"
+										class="defaultSlider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+										<div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"
+											style="width: 0%;"></div><span
+											class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"
+											style="left: 0%;"></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="appearance">
+								<p class="specialTitle">Ekran suxandoni</p>
+								<div class="block">
+									<div class="blueCheckbox">
+										<input type="checkbox" onclick="window.location.reload()" id="speechSwitcher"
+											title="Ekran suxandoni funksiyasi yoqildi" name="speechSwitcher">
+										<label for="speechSwitcher"><span></span>Yoqish / O'chirish</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<button class="btn btn__search">
+						<svg xmlns="http://www.w3.org/2000/svg" width="11.208" height="11.209"
+							viewBox="0 0 11.208 11.209">
+							<g id="Слой_x0020_1" transform="translate(-2600.957 -1076.307)">
+								<path id="Контур_1846" data-name="Контур 1846"
+									d="M2611.908,1086.019l-2.62-2.621a4.548,4.548,0,1,0-1.239,1.241l2.62,2.62a.876.876,0,1,0,1.239-1.24Zm-9.22-5.16a2.8,2.8,0,1,1,2.8,2.8A2.805,2.805,0,0,1,2602.688,1080.859Z"
+									fill="#fff" />
+							</g>
+						</svg>
+
+					</button>
+					<button class="btn menu__btn" type="button">
+						<div class="sandwich">
+							<div class="sandwich__line sandwich__line--top"></div>
+							<div class="sandwich__line sandwich__line--middle"></div>
+							<div class="sandwich__line sandwich__line--bottom"></div>
+						</div>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="banner video-page">
+		<div class="container-fluide bigger">
+			<div class="banner__container">
+				<div class="row">
+					<div class="col-xl-12 col-lg-12">
+						<div class="splide banner__slider" role="group" aria-label="Splide Basic HTML Example">
+							<div class="splide__track h-100">
+								<ul class="splide__list">
+									<li class="splide__slide">
+										<div class="slider__image video">
+											<a data-video-poster="https://fslightbox.com/img/bbunny.png"
+												data-fslightbox="html5-demo-videos"
+												href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+												<img src="/images/banner_slider_img.jpg" alt="" class="w-100">
+											</a>
+										</div>
+										<div class="slider__content">
+											<div class="title">
+												Проведен строевой смотр готовности войск
+												Министерства обороны Республики Узбекистан
+											</div>
+											<div class="date">
+												<div class="number">11</div>
+												<div class="month">ноября</div>
+											</div>
+										</div>
+									</li>
+									<li class="splide__slide">
+										<div class="slider__image video">
+											<a data-video-poster="https://fslightbox.com/img/bbunny.png"
+												data-fslightbox="html5-demo-videos"
+												href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+												<img src="/images/banner_slider_img.jpg" alt="" class="w-100">
+											</a>
+										</div>
+										<div class="slider__content">
+											<div class="title">
+												Проведен строевой смотр готовности войск
+												Министерства обороны Республики Узбекистан
+											</div>
+											<div class="date">
+												<div class="number">11</div>
+												<div class="month">ноября</div>
+											</div>
+										</div>
+									</li>
+									<li class="splide__slide">
+										<div class="slider__image video">
+											<a data-video-poster="https://fslightbox.com/img/bbunny.png"
+												data-fslightbox="html5-demo-videos"
+												href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+												<img src="/images/banner_slider_img.jpg" alt="" class="w-100">
+											</a>
+										</div>
+										<div class="slider__content">
+											<div class="title">
+												Проведен строевой смотр готовности войск
+												Министерства обороны Республики Узбекистан
+											</div>
+											<div class="date">
+												<div class="number">11</div>
+												<div class="month">ноября</div>
+											</div>
+										</div>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="news__widget video-page">
+		<div class="container-lg">
+			<div class="news__widget_container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<div class="news__widget_content">
+							<div class="news__widget_header">
+								<h4 class="title">Популярное видео</h4>
+								<a href="" class="link">Все</a>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-6">
+									<a data-video-poster="https://fslightbox.com/img/bbunny.png"
+												data-fslightbox="html5-demo-videos"
+												class="widget__card"
+												href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+										<div class="widget__card_image video position-relative">
+											<img src="/images/banner_card_img.jpg" alt="">
+											<div class="video__content">
+												<div class="title">
+													В Стратегии развития Нового Узбекистана на 2022-2026 годы в цели 91
+													«Всестороннее укрепление социальной защиты
+												</div>
+												<div class="info">
+													<div class="date">11:30 / 22.08.2022                                                                  / УЧС РУ</div>
+													<div class="type">УЧС РУ</div>
+												</div>
+											</div>
+										</div>
+
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-6">
+									<a data-video-poster="https://fslightbox.com/img/bbunny.png"
+												data-fslightbox="html5-demo-videos"
+												class="widget__card"
+												href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+										<div class="widget__card_image video position-relative">
+											<img src="/images/banner_card_img.jpg" alt="">
+											<div class="video__content">
+												<div class="title">
+													В Стратегии развития Нового Узбекистана на 2022-2026 годы в цели 91
+													«Всестороннее укрепление социальной защиты
+												</div>
+												<div class="info">
+													<div class="date">11:30 / 22.08.2022                                                                  / УЧС РУ</div>
+													<div class="type">УЧС РУ</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-6">
+									<a data-video-poster="https://fslightbox.com/img/bbunny.png"
+												data-fslightbox="html5-demo-videos"
+												class="widget__card"
+												href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+										<div class="widget__card_image video position-relative">
+											<img src="/images/banner_card_img.jpg" alt="">
+											<div class="video__content">
+												<div class="title">
+													В Стратегии развития Нового Узбекистана на 2022-2026 годы в цели 91
+													«Всестороннее укрепление социальной защиты
+												</div>
+												<div class="info">
+													<div class="date">11:30 / 22.08.2022                                                                  / УЧС РУ</div>
+													<div class="type">УЧС РУ</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-6">
+									<a data-video-poster="https://fslightbox.com/img/bbunny.png"
+												data-fslightbox="html5-demo-videos"
+												class="widget__card"
+												href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+										<div class="widget__card_image video position-relative">
+											<img src="/images/banner_card_img.jpg" alt="">
+											<div class="video__content">
+												<div class="title">
+													В Стратегии развития Нового Узбекистана на 2022-2026 годы в цели 91
+													«Всестороннее укрепление социальной защиты
+												</div>
+												<div class="info">
+													<div class="date">11:30 / 22.08.2022                                                                  / УЧС РУ</div>
+													<div class="type">УЧС РУ</div>
+												</div>
+											</div>
+										</div>
+
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-6">
+									<a data-video-poster="https://fslightbox.com/img/bbunny.png"
+												data-fslightbox="html5-demo-videos"
+												class="widget__card"
+												href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+										<div class="widget__card_image video position-relative">
+											<img src="/images/banner_card_img.jpg" alt="">
+											<div class="video__content">
+												<div class="title">
+													В Стратегии развития Нового Узбекистана на 2022-2026 годы в цели 91
+													«Всестороннее укрепление социальной защиты
+												</div>
+												<div class="info">
+													<div class="date">11:30 / 22.08.2022                                                                  / УЧС РУ</div>
+													<div class="type">УЧС РУ</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-6">
+									<a data-video-poster="https://fslightbox.com/img/bbunny.png"
+												data-fslightbox="html5-demo-videos"
+												class="widget__card"
+												href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+										<div class="widget__card_image video position-relative">
+											<img src="/images/banner_card_img.jpg" alt="">
+											<div class="video__content">
+												<div class="title">
+													В Стратегии развития Нового Узбекистана на 2022-2026 годы в цели 91
+													«Всестороннее укрепление социальной защиты
+												</div>
+												<div class="info">
+													<div class="date">11:30 / 22.08.2022                                                                  / УЧС РУ</div>
+													<div class="type">УЧС РУ</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-6">
+									<a data-video-poster="https://fslightbox.com/img/bbunny.png"
+												data-fslightbox="html5-demo-videos"
+												class="widget__card"
+												href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+										<div class="widget__card_image video position-relative">
+											<img src="/images/banner_card_img.jpg" alt="">
+											<div class="video__content">
+												<div class="title">
+													В Стратегии развития Нового Узбекистана на 2022-2026 годы в цели 91
+													«Всестороннее укрепление социальной защиты
+												</div>
+												<div class="info">
+													<div class="date">11:30 / 22.08.2022                                                                  / УЧС РУ</div>
+													<div class="type">УЧС РУ</div>
+												</div>
+											</div>
+										</div>
+
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-6">
+									<a data-video-poster="https://fslightbox.com/img/bbunny.png"
+												data-fslightbox="html5-demo-videos"
+												class="widget__card"
+												href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+										<div class="widget__card_image video position-relative">
+											<img src="/images/banner_card_img.jpg" alt="">
+											<div class="video__content">
+												<div class="title">
+													В Стратегии развития Нового Узбекистана на 2022-2026 годы в цели 91
+													«Всестороннее укрепление социальной защиты
+												</div>
+												<div class="info">
+													<div class="date">11:30 / 22.08.2022                                                                  / УЧС РУ</div>
+													<div class="type">УЧС РУ</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-6">
+									<a data-video-poster="https://fslightbox.com/img/bbunny.png"
+												data-fslightbox="html5-demo-videos"
+												class="widget__card"
+												href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+										<div class="widget__card_image video position-relative">
+											<img src="/images/banner_card_img.jpg" alt="">
+											<div class="video__content">
+												<div class="title">
+													В Стратегии развития Нового Узбекистана на 2022-2026 годы в цели 91
+													«Всестороннее укрепление социальной защиты
+												</div>
+												<div class="info">
+													<div class="date">11:30 / 22.08.2022                                                                  / УЧС РУ</div>
+													<div class="type">УЧС РУ</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="container-xl">
+		<nav aria-label="Page navigation example">
+			<ul class="pagination justify-content-center">
+			  <li class="page-item">
+				<a class="page-link" href="#" aria-label="Previous">
+				  <span aria-hidden="true">&laquo;</span>
+				</a>
+			  </li>
+			  <li class="page-item"><a class="page-link" href="#">1</a></li>
+			  <li class="page-item"><a class="page-link" href="#">2</a></li>
+			  <li class="page-item"><a class="page-link" href="#">3</a></li>
+			  <li class="page-item">
+				<a class="page-link" href="#" aria-label="Next">
+				  <span aria-hidden="true">&raquo;</span>
+				</a>
+			  </li>
+			</ul>
+		  </nav>
+	</div>
+	  
+	<footer class="footer">
+		<div class="container-lg">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__logo">
+						<img src="/images/army-logo.svg" alt="">
+					</div>
+					<div class="footer__top_navs">
+						<ul class="nav ">
+							<li class="nav-item nav-header">
+								НОВОСТИ
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">По Узбекистану</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">По региональну</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В Мире</a>
+							</li>
+						</ul>
+						<ul class="nav ">
+							<li class="nav-item nav-header">
+								Патриотизм
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В МО РУ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В НГ РУ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В СГБ РУ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В МВД РУ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В МЧС РУ</a>
+							</li>
+						</ul>
+						<ul class="nav ">
+							<li class="nav-item nav-header">
+								Военная аналитика
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В МО РУ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В НГ РУ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В СГБ РУ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В МВД РУ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">В МЧС РУ</a>
+							</li>
+						</ul>
+						<ul class="nav ">
+							<li class="nav-item nav-header">
+								Военная история
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Военная история</a>
+							</li>
+						</ul>
+						<ul class="nav">
+							<li class="nav-item nav-header">
+								Медиа
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Фотогалерия</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Видеогалерия</a>
+							</li>
+							<li class="nav-item nav-header">
+								Контакты
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="copyright">
+						<p>При использовании материалов ссылка на www.Armiya.uz обязательна</p>
+						<p>© 2022 Официальный веб-сайт Все о Вооруженных силах Республики Узбекистан
+							Все права защищены</p>
+					</div>
+					<div class="footer__bottom_middle">
+						<ul class="social">
+							<li class="social__item">
+								<a href="" class="social__link">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+										<g id="Сгруппировать_345" data-name="Сгруппировать 345"
+											transform="translate(-900 -3044.54)">
+											<circle id="Эллипс_10" data-name="Эллипс 10" cx="9" cy="9" r="9"
+												transform="translate(900 3044.54)" fill="#fff" />
+											<g id="Сгруппировать_64" data-name="Сгруппировать 64"
+												transform="translate(36.272 2212.353)">
+												<path id="Контур_1667" data-name="Контур 1667"
+													d="M2426.909,801.563v1.6h-1.849v2.105h1.849v5.267h2.276v-5.267h1.7l.323-2.105h-2.02V801.8a1.052,1.052,0,0,1,1.187-1.137h.918v-1.792a11.179,11.179,0,0,0-1.63-.142A2.57,2.57,0,0,0,2426.909,801.563Z"
+													transform="translate(-1555.447 36.27)" fill="#345a43" />
+											</g>
+										</g>
+									</svg>
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="" class="social__link">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+										<g id="Сгруппировать_344" data-name="Сгруппировать 344"
+											transform="translate(-934 -3044.54)">
+											<circle id="Эллипс_11" data-name="Эллипс 11" cx="9" cy="9" r="9"
+												transform="translate(934 3044.54)" fill="#fff" />
+											<g id="Сгруппировать_67" data-name="Сгруппировать 67"
+												transform="translate(34.634 2210.527)">
+												<path id="Контур_1669" data-name="Контур 1669"
+													d="M3250.254,861.66a.705.705,0,1,0,.705.705A.706.706,0,0,0,3250.254,861.66Z"
+													transform="translate(-2338.705 -22.451)" fill="#345a43"
+													fill-rule="evenodd" />
+												<path id="Контур_1670" data-name="Контур 1670"
+													d="M3139.612,891.949a1.9,1.9,0,1,1,1.9-1.9A1.9,1.9,0,0,1,3139.612,891.949Zm0-4.859a2.962,2.962,0,1,0,2.961,2.962A2.966,2.966,0,0,0,3139.612,887.09Z"
+													transform="translate(-2231.196 -47.176)" fill="#345a43"
+													fill-rule="evenodd" />
+												<path id="Контур_1671" data-name="Контур 1671"
+													d="M3077.053,826.022a2.484,2.484,0,0,0-2.481,2.481v4.8a2.484,2.484,0,0,0,2.481,2.481h4.8a2.483,2.483,0,0,0,2.481-2.481v-4.8a2.483,2.483,0,0,0-2.481-2.481Zm4.8,10.894h-4.8a3.616,3.616,0,0,1-3.612-3.612v-4.8a3.616,3.616,0,0,1,3.612-3.612h4.8a3.617,3.617,0,0,1,3.612,3.612v4.8A3.616,3.616,0,0,1,3081.854,836.915Z"
+													transform="translate(-2171.087 12.11)" fill="#345a43"
+													fill-rule="evenodd" />
+											</g>
+										</g>
+									</svg>
+
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="" class="social__link">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+										<g id="Сгруппировать_343" data-name="Сгруппировать 343"
+											transform="translate(-968 -3044.54)">
+											<circle id="Эллипс_12" data-name="Эллипс 12" cx="9" cy="9" r="9"
+												transform="translate(968 3044.54)" fill="#fff" />
+											<g id="Сгруппировать_65" data-name="Сгруппировать 65"
+												transform="translate(32.982 2209.571)">
+												<g id="_1593739195808" transform="translate(937.017 838.996)">
+													<path id="Контур_1673" data-name="Контур 1673"
+														d="M3818.49,859.68l1.388,3.764,6.158-8.553Z"
+														transform="translate(-3815.151 -853.419)" fill="#6a947b" />
+													<path id="Контур_1674" data-name="Контур 1674"
+														d="M3843.313,953.64l-.133,2.965,3.25-2.756Z"
+														transform="translate(-3838.435 -946.543)" fill="#345a43" />
+													<path id="Контур_1675" data-name="Контур 1675"
+														d="M3772.274,829.106l-12.138,4.612a.391.391,0,0,0,.013.736l3.13,1.057,7.127-4.6-5.645,5.265,4.4,3.335a.8.8,0,0,0,1.259-.443l2.375-9.5A.391.391,0,0,0,3772.274,829.106Z"
+														transform="translate(-3759.884 -829.08)" fill="#345a43" />
+												</g>
+											</g>
+										</g>
+									</svg>
+
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="" class="social__link">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+										<g id="Сгруппировать_342" data-name="Сгруппировать 342"
+											transform="translate(-1002 -3044.54)">
+											<path id="Контур_1863" data-name="Контур 1863"
+												d="M9,0A9,9,0,1,1,0,9,9,9,0,0,1,9,0Z"
+												transform="translate(1002 3044.54)" fill="#fff" />
+											<g id="Сгруппировать_66" data-name="Сгруппировать 66"
+												transform="translate(26.203 2213.219)">
+												<path id="Контур_1676" data-name="Контур 1676"
+													d="M4592.1,710.574,4589,712.111c-.122.066-.536-.022-.536-.161v-3.156c0-.14.417-.228.54-.158l2.974,1.618C4592.1,710.325,4592.229,710.505,4592.1,710.574Zm4.075-1.853a2.71,2.71,0,0,0-2.71-2.71h-6.929a2.711,2.711,0,0,0-2.71,2.71v3.224a2.71,2.71,0,0,0,2.71,2.71h6.929a2.709,2.709,0,0,0,2.71-2.71Z"
+													transform="translate(-3605.207 129.99)" fill="#345a43" />
+											</g>
+										</g>
+									</svg>
+								</a>
+							</li>
+						</ul>
+						<div class="contacts">
+							<a href="" class="contacts__link email">
+								info@O'R QK.uz
+							</a>
+							<a href="" class="contacts__link phone">
+								+99871 288-88-88
+							</a>
+						</div>
+
+					</div>
+					<a href="" class="developer">
+						<svg xmlns="http://www.w3.org/2000/svg" width="168" height="42.506" viewBox="0 0 168 42.506">
+							<g id="Сгруппировать_352" data-name="Сгруппировать 352"
+								transform="translate(-1376 -3293.529)">
+								<text id="_2003-2022_Единый_интегратор_по_созданию_и_поддержке"
+									data-name="© 2003-2022 Единый интегратор по созданию и поддержке"
+									transform="translate(1376 3323.688)" fill="#fff" font-size="6"
+									font-family="Roboto-Regular, Roboto">
+									<tspan x="0" y="0">© 2003-2022 Единый интегратор по созданию и поддержке</tspan>
+								</text>
+								<text id="государственных_информационных_систем"
+									data-name="государственных информационных систем"
+									transform="translate(1376 3334.035)" fill="#fff" font-size="6"
+									font-family="Roboto-Regular, Roboto">
+									<tspan x="0" y="0">государственных информационных систем</tspan>
+								</text>
+								<g id="Слой_x0020_1" transform="translate(-50441.301 -26735.031)">
+									<path id="Контур_1864" data-name="Контур 1864"
+										d="M51817.3,30095.551v5.479a2.275,2.275,0,0,0,1.16,1.982,5.309,5.309,0,0,0,1.9-.377,22.11,22.11,0,0,0,5.355-3.129.043.043,0,0,1,.055.01.034.034,0,0,1-.008.045c-.566.543-1.133,1.061-1.691,1.541q-.867.735-1.687,1.367h0l-.32.24h0q-.41.313-.82.59h7.016c.52-.6.488-1.648,0-3.01a22.193,22.193,0,0,0-3.133-5.359.035.035,0,0,1,.008-.049.034.034,0,0,1,.051,0h0c.539.568,1.059,1.135,1.539,1.7s.918,1.1,1.332,1.635a12.876,12.876,0,0,0,1.332-3.609,2.45,2.45,0,0,0-.387-2.139c-.586-.594-1.672-.584-3.09-.074a22.11,22.11,0,0,0-5.355,3.129.05.05,0,0,1-.059-.006.054.054,0,0,1,.008-.049h0c.57-.543,1.141-1.061,1.7-1.537s1.105-.922,1.637-1.336a12.86,12.86,0,0,0-3.613-1.33,2.4,2.4,0,0,0-2.137.387c-.594.58-.586,1.668-.078,3.088a22.193,22.193,0,0,0,3.133,5.359.035.035,0,0,1-.012.051c-.016.014-.035.01-.039-.006-.551-.568-1.062-1.135-1.543-1.7s-.949-1.133-1.371-1.682h0l-.242-.322h0C51817.723,30096.139,51817.508,30095.844,51817.3,30095.551Zm17.273-9.531h-15.008a2.271,2.271,0,0,0-2.266,2.27v.5a7.494,7.494,0,0,1,1.355.361,23.523,23.523,0,0,1,5.57,3.146,18.571,18.571,0,0,1,4.508-2.607c1.23-.436,2.191-.441,2.727.074.6.582.582,1.746.039,3.266a23.932,23.932,0,0,1-3.148,5.572,18.333,18.333,0,0,1,2.605,4.51c.02.063.047.127.066.186h1.285a2.272,2.272,0,0,0,2.266-2.27Z"
+										transform="translate(-0.004 -57.097)" fill="#fff" fill-rule="evenodd" />
+									<g id="_1611176656112" transform="translate(51838.75 30028.561)">
+										<path id="Контур_1865" data-name="Контур 1865"
+											d="M75342.3,30092.613h-2.172l.008-14.1-4.039,10.621a2.341,2.341,0,0,1-4.336,0l-4.078-9.949.008,3.8v7.924a1.543,1.543,0,0,1-1.7,1.7h-1.836v-15.783l.008-.039v-.041l.008-.041.008-.039v-.041l.008-.035.008-.041.023-.041v-.039l.016-.037.016-.037.016-.039.023-.037.023-.037.016-.037.016-.039.016-.039.023-.033.023-.035.023-.035.016-.035.031-.033h0l.023-.039.023-.033h0l.031-.029.023-.035.023-.031.031-.031.023-.029.031-.035.039-.025.031-.029.023-.031h0l.039-.027.031-.025.023-.027.039-.025.031-.025.039-.023h0l.031-.02.039-.025.031-.023.031-.02.047-.02.039-.02.039-.016.031-.018.039-.018.039-.018h0l.039-.012.031-.01.039-.014.039-.014.039-.006.039-.01h0l.047-.008h0l.039-.01.047,0,.031,0,.047,0h4.109l4.164,11.1,4.008-10.154a1.583,1.583,0,0,1,1.516-.945H75344v15.705C75344,30092.074,75343.523,30092.611,75342.3,30092.613Z"
+											transform="translate(-75197.516 -30074.91)" fill="#fff" />
+										<path id="Контур_1866" data-name="Контур 1866"
+											d="M72166.844,30031.938a3.929,3.929,0,0,0-3.281,1.547,6.489,6.489,0,0,0-1.219,4.1,6.38,6.38,0,0,0,1.219,4.1,3.868,3.868,0,0,0,3.172,1.5,3.95,3.95,0,0,0,3.234-1.465,6.282,6.282,0,0,0,1.172-4.062,6.8,6.8,0,0,0-1.148-4.211A3.739,3.739,0,0,0,72166.844,30031.938Zm-.016-3.375h.234a7.885,7.885,0,0,1,5.922,2.438,9.058,9.058,0,0,1,2.3,6.436,9.215,9.215,0,0,1-2.406,6.619,8.9,8.9,0,0,1-12.312.08,8.746,8.746,0,0,1-2.352-6.346,9.42,9.42,0,0,1,2.383-6.676A8.281,8.281,0,0,1,72166.828,30028.563Z"
+											transform="translate(-72051.516 -30028.563)" fill="#fff" />
+										<path id="Контур_1867" data-name="Контур 1867"
+											d="M69756.242,30046.033a12.173,12.173,0,0,1-4.031.561,8.367,8.367,0,0,1-6.3-2.352,8.577,8.577,0,0,1-2.3-6.279,9.162,9.162,0,0,1,2.578-6.773,9,9,0,0,1,6.648-2.6h.141a13.416,13.416,0,0,1,2.391.2c1.031.18,1.8.527,1.82,1.77v1.018c-.117,1.051-.984.949-1.469.8a8.18,8.18,0,0,0-2.516-.4,5.282,5.282,0,0,0-3.961,1.541,6.484,6.484,0,0,0-.094,8.2,5.038,5.038,0,0,0,3.828,1.5,11.292,11.292,0,0,0,2.781-.5c.594-.133,1.43.137,1.43.764v.92C69757.156,30045.418,69756.844,30045.83,69756.242,30046.033Z"
+											transform="translate(-69652.125 -30028.59)" fill="#fff" />
+										<path id="Контур_1868" data-name="Контур 1868"
+											d="M66759.234,30031.938a3.9,3.9,0,0,0-3.273,1.547,6.44,6.44,0,0,0-1.211,4.1,6.332,6.332,0,0,0,1.211,4.1,3.858,3.858,0,0,0,3.172,1.5,3.9,3.9,0,0,0,3.211-1.465,6.24,6.24,0,0,0,1.2-4.062,6.752,6.752,0,0,0-1.156-4.211A3.758,3.758,0,0,0,66759.234,30031.938Zm-.016-3.375h.234a7.843,7.843,0,0,1,5.914,2.438,8.985,8.985,0,0,1,2.3,6.436,9.2,9.2,0,0,1-2.383,6.619,8.9,8.9,0,0,1-12.312.08,8.714,8.714,0,0,1-2.352-6.346,9.322,9.322,0,0,1,2.391-6.676A8.234,8.234,0,0,1,66759.219,30028.563Z"
+											transform="translate(-66677.977 -30028.563)" fill="#fff" />
+										<path id="Контур_1869" data-name="Контур 1869"
+											d="M64881.383,30078.381h-6.141v4.275h3.93a1.833,1.833,0,0,1,1.711,1.707v1.471h-5.641v6.766h-2.227a1.838,1.838,0,0,1-1.7-1.707v-15.7h8.367a1.832,1.832,0,0,1,1.7,1.7Z"
+											transform="translate(-64810.516 -30074.896)" fill="#fff" />
+										<path id="Контур_1870" data-name="Контур 1870"
+											d="M61767.027,30092.146a2.7,2.7,0,0,1-2.523-1.025l-6.512-9.92c-.41-.639-.707-1.117-.867-1.443h-.047c.063.613.094,1.557.094,2.813v8.244c0,.6-.422,1.328-1,1.328h-2.7v-15.7a2.158,2.158,0,0,1,2.34-1.707,2.846,2.846,0,0,1,2.547,1.01l6.246,9.59c.313.479.6.949.879,1.42h.043a17.789,17.789,0,0,1-.094-2.393v-7.934a1.832,1.832,0,0,1,1.707-1.693h2v15.7A1.942,1.942,0,0,1,61767.027,30092.146Z"
+											transform="translate(-61712.313 -30074.438)" fill="#fff" />
+										<path id="Контур_1871" data-name="Контур 1871"
+											d="M60505.27,30092.611h-2.23v-15.705a1.833,1.833,0,0,1,1.711-1.7h2.215v15.711A1.83,1.83,0,0,1,60505.27,30092.611Z"
+											transform="translate(-60469.758 -30074.908)" fill="#fff" />
+										<path id="Контур_1872" data-name="Контур 1872"
+											d="M57892.41,30092.611h-10.625a1.745,1.745,0,0,1-1.152-2.994l8.371-11.225h-8.277v-1.482a1.831,1.831,0,0,1,1.715-1.707h11.641a5.264,5.264,0,0,1-.879,3.408l-7.852,10.818h8.75v1.484A1.829,1.829,0,0,1,57892.41,30092.611Z"
+											transform="translate(-57863.391 -30074.908)" fill="#fff" />
+										<path id="Контур_1873" data-name="Контур 1873"
+											d="M55235.473,30085.092q0,7.825-7.277,7.842h-.055q-7.055-.015-7.062-7.658l.008-8.35a1.589,1.589,0,0,1,1.7-1.7h2.223v10.1q0,4.23,3.309,4.227,3.24,0,3.234-4.078v-8.541a1.852,1.852,0,0,1,1.711-1.7h2.211Z"
+											transform="translate(-55221.078 -30074.928)" fill="#fff" />
+									</g>
+								</g>
+							</g>
+						</svg>
+
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<body>
+	<script src="/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="/libs/splide/dist/js/splide.min.js"></script>
+	<script src="/libs/fslightbox/fslightbox.js"></script>
+	<script src="js/common.js" defer></script>
+</body>
+
+</html>
