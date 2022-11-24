@@ -123,6 +123,10 @@ body {
 .header .btn {
   border: none;
 }
+.header__armed-logo {
+  width: 204px;
+  display: block;
+}
 .header__army-logo {
   display: block;
 }
@@ -145,7 +149,7 @@ body {
   background-size: cover;
 }
 .header__left {
-  background-color: #345A43;
+  background-color: transparent;
   padding: 6px 6px 6px 0;
 }
 .header__middle .nav-item:last-child .nav-link::after {
@@ -748,7 +752,7 @@ body {
 .content__card {
   display: flex;
   text-decoration: none;
-  padding: 31px 20px 26px 16px;
+  padding: 21px 20px 20px 16px;
   border-radius: 5px;
   background-color: #F7F7F7;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -758,7 +762,7 @@ body {
   transform: scale(1.1);
 }
 .content__card_image {
-  flex: 0 0 30%;
+  flex: 0 0 40%;
   overflow: hidden;
   position: relative;
 }
@@ -770,18 +774,18 @@ body {
   transition: all 0.3s linear;
 }
 .content__card_content {
-  flex: 0 0 70%;
-  padding-left: 10px;
+  flex: 0 0 60%;
+  padding-left: 20px;
 }
 .content__card_content .title {
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 20px;
+  line-height: 24px;
   color: #345A43;
   margin-bottom: 20px;
 }
 .content__card_content .desc {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 20px;
   color: #707070;
 }
 

@@ -5,6 +5,10 @@
     & .btn {
         border: none;
     }
+    &__armed-logo {
+       width: 204px;
+       display: block;
+    }
     &__army-logo {
         display: block;
         & img {
@@ -30,8 +34,9 @@
     }
 
     &__left {
-        background-color: #345A43;
+        background-color: transparent;
         padding: 6px 6px 6px 0;
+      
     }
 
     &__middle {
